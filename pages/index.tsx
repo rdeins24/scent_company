@@ -1,27 +1,22 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Masthead from "../components/masthead";
-import AboutUs from "../components/aboutus";
+
 import Skills from "../components/skills";
 import Works from "../components/works";
 import TrustedBy from "../components/trustedby";
 import ContactUs from "../components/contactus";
 import Footer from "../components/footer";
-import About from "../components/about";
+
 import Hero from "../components/Hero";
-import Services from "../components/Services";
 import Example from "../components/Example";
-import Partners from "../components/Partners";
 import Subscribe from "../components/Subscribe";
 import Workflow from "../components/Workflow";
 import Stats from "../components/Stats";
-import Banner from "../components/Banner";
 import Features from "../components/Features";
 import Blog from "../components/Blog";
-import ThreeColumn from "../components/ThreeColumn";
 import WorkWithUS from "../components/WorkWithUS";
-import Section from "../components/Section";
 import Marketing from "../components/Marketing";
+
 
 const Home: NextPage = () => {
   return (
@@ -33,6 +28,7 @@ const Home: NextPage = () => {
       </Head>
       <Hero />
       {/* <Partners /> */}
+   
       <Features />
       {/* <ThreeColumn /> */}
       <Skills />
