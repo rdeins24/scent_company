@@ -29,34 +29,32 @@ const Skills: React.FC = () => {
   }
 
   return (
-    <div ref={refContainer} className="bg-black text-white">
-      <div className="min-h-screen max-w-5xl mx-auto px-10 lg:px-20 py-24 md:py-28 lg:py-36 flex flex-col justify-center items-center text-4xl md:text-6xl lg:text-7xl tracking-tight font-semibold">
-        <div className="leading-[1.15]">
+    <div ref={refContainer} className=" text-white from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent ">
+      <div className="min-h-screen max-w-5xl mx-auto px-10 lg:px-20 py-24 md:py-28 lg:py-36 flex flex-col justify-center items-center text-4xl md:text-6xl lg:text-6xl tracking-tight font-semibold">
+        <div className="leading-[1.25]">
           <div
             className={s.skillText}
             style={{
               opacity: opacityForBlock(progress, 0),
             }}
           >
-            We know our tools inside out.
+          Construim conexiuni, creăm branduri, inspirăm succes.
           </div>
           <span
-            className={`${s.skillText} inline-block after:content-['_']`}
+            className={`${s.skillText} inline-block after:content-['_'] from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent`}
             style={{
               opacity: opacityForBlock(progress, 1),
             }}
           >
-            Out team has contributed 123 commits to React Native core, powering
-            thousands of apps.
+         Creăm povestea ta de succes digital.
           </span>
           <span
-            className={`${s.skillText} inline-block`}
+            className={`${s.skillText} inline-block from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent`}
             style={{
               opacity: opacityForBlock(progress, 2),
             }}
           >
-            W&apos;re maintaning some of the most populer open-source projects,
-            with over <strong>1,234</strong> downloads.
+          Conectăm brandurile la inimile și mințile consumatorilor online
           </span>
         </div>
       </div>

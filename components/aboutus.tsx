@@ -4,7 +4,7 @@ import memberList from "../constants/dummy/member.json";
 
 const AboutUs: React.FC = () => {
   return (
-    <section className={`flex flex-col bg-white py-20 text-3xl md:text-4xl`}>
+    <section className={`flex flex-col  py-20 text-3xl md:text-4xl`}>
       <div className="container mx-auto px-11">
         <p className="leading-tight max-w-5xl mx-auto text-4xl tracking-tight">
           <strong>We will help you ship better apps, faster.</strong> Our team

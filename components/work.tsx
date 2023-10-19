@@ -6,15 +6,15 @@ interface Props {
 }
 
 export const WorkContainer: React.FC<Props> = ({ children }) => (
-  <div className="grid w-full min-h-screen grid-cols-1 lg:grid-cols-2">
+  <div className="grid w-full min-h-screen grid-cols-1 lg:grid-cols-2 ">
     {children}
   </div>
 );
 
 export const WorkBackground: React.FC = () => (
   <div className="sticky top-0 grid w-full min-h-screen grid-cols-1 lg:grid-cols-2">
-    <div className="bg-black h-[30vh] lg:h-auto"></div>
-    <div className="bg-white h-[70vh] lg:min-h-screen"></div>
+    <div className=" bg-[black)] h-[30vh] lg:h-auto"></div>
+    <div className=" h-[70vh] lg:min-h-screen "></div>
   </div>
 );
 
