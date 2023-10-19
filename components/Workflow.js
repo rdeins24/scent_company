@@ -1,6 +1,6 @@
 import { FaCreativeCommonsShare, FaDharmachakra, FaEdit } from "react-icons/fa";
 import Image from "next/image";
-import insta from "../public/assets/works/insta.png";
+import insta from "../public/planet.jpg";
 
 export default function Example() {
   return (

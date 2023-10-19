@@ -34,7 +34,7 @@ const Home: NextPage = () => {
       <Skills />
       {/* <Banner /> */}
       <Workflow />
-      <Marketing/>
+      {/* <Marketing/> */}
       {/* <Section /> */}
       <Stats />
       <Works />
