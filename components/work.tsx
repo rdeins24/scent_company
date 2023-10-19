@@ -63,7 +63,7 @@ interface LinkProps {
 }
 
 export const WorkLink: React.FC<LinkProps> = ({ href, children }) => (
-  <Link href={href}>
+  <Link href={href} legacyBehavior>
     <a
       target="_blank"
       rel="noreferrer"
