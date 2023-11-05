@@ -1,4 +1,4 @@
-import Footer1 from "./footer1";
+import Footer1 from "./Footer1";
 import Navbar from "./Navbar";
 
 
