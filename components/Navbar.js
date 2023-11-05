@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import Link from "next/link";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -9,14 +10,19 @@ const Navbar = () => {
     setNav(!nav);
   };
   return (
-    <div className=" flex justify-between items-center h-20 max-w-[1240px] mx-auto px-4  ">
-      <h1 className="w-full text-3xl font-bold  ">GUT UI.</h1>
+    <div className=" flex justify-between items-center h-20 max-w-[1240px] mx-auto px-4 bg-black ">
+      <h1 className="w-full text-3xl font-bold  "><Link href='/'>GUT UI.</Link></h1>
       <ul className="hidden md:flex">
-        <li className="p-4">Home </li>
-        <li className="p-4">Company </li>
-        <li className="p-4">Resources </li>
-        <li className="p-4">About </li>
-        <li className="p-4">Contact </li>
+        <li className="p-4">
+          <Link href="/">Home</Link>{" "}
+        </li>
+        <li className="p-4">
+          <Link href="/services">Servicii</Link>{" "}
+        </li>
+
+        <li className="p-4">
+          <Link href="/Contact">Contact</Link>{" "}
+        </li>
       </ul>
       <div onClick={handleNav} className="block md:hidden">
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}

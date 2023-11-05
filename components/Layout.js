@@ -1,7 +1,6 @@
-// import Footer from "./Footer";
+import Footer1 from "./footer1";
 import Navbar from "./Navbar";
-// import "../styles/globals.css";
-// import Hero from "./contact/Hero";
+
 
 export default function Layout({ children }) {
   return (
@@ -10,7 +9,8 @@ export default function Layout({ children }) {
         <Navbar />
         {children}
 
-        {/* <Footer /> */}
+        <Footer1 />
+
       </body>
     </html>
   );

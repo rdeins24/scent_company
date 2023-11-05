@@ -45,12 +45,12 @@ export const WorkRight: React.FC<{
 
   return (
     <div
-      className="flex justify-center flex-1 h-screen lg:items-center"
+      className="flex justify-center flex-1 h-[100%] lg:items-center  "
       style={{
         transform: `translateY(${translateY}px)`,
       }}
     >
-      <div className="w-full max-w-md px-10 pt-10 lg:pt-0 md:px-0">
+      <div className="w-full max-w-md px-10 pt-10 lg:pt-0 md:px-0" >
         {children}
       </div>
     </div>

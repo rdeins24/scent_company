@@ -29,8 +29,8 @@ const Skills: React.FC = () => {
   }
 
   return (
-    <div ref={refContainer} className=" text-white from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent ">
-      <div className="min-h-screen max-w-5xl mx-auto px-10 lg:px-20 py-24 md:py-28 lg:py-36 flex flex-col justify-center items-center text-4xl md:text-6xl lg:text-6xl tracking-tight font-semibold">
+    <div ref={refContainer} className="bg-[#0d0e11]">
+      <div className=" min-h-screen max-w-5xl mx-auto px-10 lg:px-20 py-24 md:py-28 lg:py-36 flex flex-col justify-center items-center text-4xl md:text-6xl lg:text-6xl tracking-tight font-semibold text-gray-300 font-mono">
         <div className="leading-[1.25]">
           <div
             className={s.skillText}
@@ -41,7 +41,7 @@ const Skills: React.FC = () => {
           Construim conexiuni, creăm branduri, inspirăm succes.
           </div>
           <span
-            className={`${s.skillText} inline-block after:content-['_'] from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent`}
+            className={`${s.skillText} inline-block after:content-['_'] text-gray-300`}
             style={{
               opacity: opacityForBlock(progress, 1),
             }}
@@ -49,7 +49,7 @@ const Skills: React.FC = () => {
          Creăm povestea ta de succes digital.
           </span>
           <span
-            className={`${s.skillText} inline-block from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent`}
+            className={`${s.skillText} inline-block text-gray-300`}
             style={{
               opacity: opacityForBlock(progress, 2),
             }}

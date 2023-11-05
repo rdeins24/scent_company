@@ -1,10 +1,10 @@
 import { FaCreativeCommonsShare, FaDharmachakra, FaEdit } from "react-icons/fa";
 import Image from "next/image";
-import insta from "../public/planet.jpg";
+import insta from "../public/insta.png";
 
 export default function Example() {
   return (
-    <div className="relative isolate overflow-hidden  px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0 ">
+    <div className="bg-[#0d0e11] relative isolate overflow-hidden  px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0 ">
       <div className="absolute inset-0 -z-10 overflow-hidden"></div>
       <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
@@ -13,10 +13,10 @@ export default function Example() {
               {/* <p className=" text-5xl">
                 Website
               </p> */}
-              <h1 className="mt-2 text-5xl font-bold tracking-tight text-white">
+              {/* <h1 className="mt-2 text-5xl font-bold tracking-tight text-white">
                 Serviciile noastre
               </h1>
-         
+          */}
             </div>
           </div>
         </div>
@@ -33,12 +33,12 @@ export default function Example() {
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 white lg:max-w-lg">
               <h3 className="text-4xl">  Web development. </h3>
-              <p className="pt-10">
+              {/* <p className="pt-10">
 
                 We specialise in crafting beautiful, high
                 quality marketing pages. The rest of the website will be a shell
                 that uses lorem ipsum everywhere.
-              </p>
+              </p> */}
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 <li className="flex gap-x-3">
                   <FaCreativeCommonsShare
@@ -46,12 +46,16 @@ export default function Example() {
                     aria-hidden="true"
                   />
                   <span>
-                    <strong className="font-semibold from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent">
+                    <strong className="font-semibold text-white text-3xl ">
                       Ecommerce
-                    </strong>{" "}
+                    </strong >{" "}
+
+                    <p className="font-semibold text-gray-300 ">
+
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Maiores impedit perferendis suscipit eaque, iste dolor
                     cupiditate blanditiis ratione.
+                    </p>
                   </span>
                 </li>
                 <li className="flex gap-x-3">

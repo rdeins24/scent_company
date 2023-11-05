@@ -46,7 +46,7 @@
 
 // export default Hero;
 
-"use client";
+// "use client";
 
 import React, { Component } from "react";
 import { render } from "react-dom";
@@ -57,14 +57,14 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <div className="">
-
-    <div className="text-white bg-[url('/planet.jpg')] bg-no-repeat bg-cover  bg-center  w-[100%] h-[90vh]  pt-[170px] ">
+    <div className="text-white  bg-[url('/grad.svg')] w-[100%] h-[90vh]  pt-[170px] className={`${inter.variable} font-mono`}">
     
       <div className="     mx-auto text-center flex flex-col justify-center ">
    
-        <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-10 from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent">
+        <h1 className=" font-mono md:text-7xl sm:text-6xl text-4xl font-bold md:py-10 from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent">
         WE BUILD DIGITAL EXPERIENCES 
         </h1>
+
         <div className="flex justify-center items-center">
           <p className="md:text-5xl sm:text-4xl text-xl font-bold py-4"></p>
 
@@ -81,6 +81,8 @@ const Hero = () => {
       </div>
       
     </div>
+
+    
         </div>
   );
 };
