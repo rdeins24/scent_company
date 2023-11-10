@@ -11,20 +11,7 @@ function ContactDetails() {
           <p className="leading-relaxed text-base">
             Locavore cardigan small batch roof party blue bottle blog meggings sartorial jean shorts kickstarter migas sriracha church-key synth succulents. Actually taiyaki neutra, distillery gastropub pok pok ugh.
           </p>
-          {/* <a className="text-indigo-500 inline-flex items-center mt-4">
-            Learn More
-            <svg
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              className="w-4 h-4 ml-2"
-              viewBox="0 0 24 24"
-            >
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </a> */}
+
         </div>
         <div className="flex flex-col md:w-1/2 md:pl-12">
           <h2 className="title-font font-semibold text-gray-800 tracking-wider text-sm mb-3">

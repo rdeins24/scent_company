@@ -7,10 +7,15 @@ module.exports = {
     letterSpacing: {
       tight: '-.015em'
     },
+    
     extends: {
       height: {
         'half-screen': '50vh'
       }
+      
     }
+    
   }
+  
+  
 }

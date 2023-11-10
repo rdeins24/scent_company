@@ -57,9 +57,9 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <div className="">
-    <div className="text-white  bg-[url('/grad.svg')] w-[100%] h-[90vh]  pt-[170px] className={`${inter.variable} font-mono`}">
+    <div className="text-white  bg-[url('/grad.svg')] w-[100%] h-[100vh]  pt-[170px] className={`${inter.variable} font-mono`}">
     
-      <div className="     mx-auto text-center flex flex-col justify-center ">
+      <div className=" mx-auto text-center flex flex-col justify-center ">
    
         <h1 className=" font-mono md:text-7xl sm:text-6xl text-4xl font-bold md:py-10 from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent">
         WE BUILD DIGITAL EXPERIENCES 

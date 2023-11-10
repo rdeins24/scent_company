@@ -68,7 +68,6 @@ function ContactUsMap() {
               className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
             ></textarea>
           </div>
-          {/* <button className="text-white bg-gradient-to-r from-pink-500 via-red-500 to-orange-500  p-1 -translate-x-1 rounded-br-xl hover:bg-blue-500">Trimite </button> */}
           <Button/>
           <p className="text-xs text-gray-500 mt-3">
             Chicharrones blog helvetica normcore iceland tousled brook viral artisan.

@@ -8,6 +8,7 @@ import {
   FaSign,
 } from "react-icons/fa";
 import ButtonGlowHover from "../components/ButtonGlowHover";
+import Button from "../components/Button";
 
 const Jobs = () => {
   return (
@@ -110,7 +111,8 @@ const Jobs = () => {
         </div>
       </div>
     <div className="flex items-center justify-center mb-20">
-    <ButtonGlowHover />
+    {/* <ButtonGlowHover /> */}
+    <Button />
     </div>
     </section>
   );
