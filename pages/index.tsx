@@ -20,6 +20,8 @@ import BuildingBlock from "../components/BuildingBlock";
 import Button from "../components/Button";
 import ButtonGlowHover from "../components/ButtonGlowHover";
 // const inter = Inter({ subsets: ["latin"] });
+import Member from "../components/member";
+
 
 const Home = () => {
   return (
@@ -30,7 +32,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
-
+{/* <Member/> */}
       {/* <ButtonGlowHover/> */}
       <CardList />
       <div className="mx-auto text-center">

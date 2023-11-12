@@ -4,7 +4,6 @@ import ScrollObserver from "../utils/scroll-observer";
 import SizeObserver from "../utils/size-observer";
 import Layout from "../components/Layout";
 import "../styles/globals.css";
-
 import { Inter } from 'next/font/google'
  
 const inter = Inter({
@@ -14,12 +13,11 @@ const inter = Inter({
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Layout >
+    <Layout>
       <SizeObserver>
         <ScrollObserver>
           <div className={`${inter.variable} font-mono font-inter`}>
-
-          <Component {...pageProps} />
+            <Component {...pageProps} />
           </div>
         </ScrollObserver>
       </SizeObserver>

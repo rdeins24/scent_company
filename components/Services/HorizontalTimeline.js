@@ -1,4 +1,5 @@
 import React from "react";
+import Zoom from 'react-reveal/Zoom';
 
 const HorizontalTimeline = () => {
   const timelineData = [
@@ -40,9 +41,12 @@ const HorizontalTimeline = () => {
 
   const TimelineItem = ({ title, description, color }) => (
     <div className="w-1/4 text-center relative hidden md:block">
+      <Zoom right ssrFadeout duration={1500}  >
       <div
         className={`w-6 h-6 rounded-full ${getColorClass(color)} flex items-center justify-center absolute`}
       />
+      </Zoom>
+  
       <div className="border border-dotted mt-3" />
       <div className="flex flex-col flex-start text-left pt-3">
         <h3 className="text-white text-xl pt-5">{title}</h3>

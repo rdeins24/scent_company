@@ -1,4 +1,5 @@
 import React from "react";
+import Rotate from 'react-reveal/Rotate';
 import {
   FaCode,
   FaInstagram,
@@ -52,10 +53,14 @@ const Features = () => {
     <div className="py-16 sm:py-10 bg-[#0d0e11]">
       <div className="mx-auto px-6 md:px-8 lg:px-16 ">
         <div className="md:text-6xl  text-3xl md:w-[60%] mx-auto text-center bg-gradient-to-r from-pink-500 via-red-500 to-orange-500 bg-clip-text text-transparent">
+       
+
           <h2 className="leading-[1.2]">
             Suntem pasionati în furnizarea unui spectru complet de servicii de
             marketing digital, susținută de idei îndrăznețe și inovații.
           </h2>
+     
+
         </div>
         <div className="md:w-[70%] grid grid-cols-1 gap-x-8 gap-y-10 md:max-w-xl lg:max-w-none lg:grid-cols-2 lg:gap-y-16 mx-auto mt-16 max-w-2xl">
           {features.map((feature, index) => (
