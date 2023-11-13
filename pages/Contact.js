@@ -1,16 +1,14 @@
-import React from 'react'
-import ContactUsMap from '../components/ContactUsMap'
-import ContactDetails from '../components/ContactDetails'
+import React from "react";
+import ContactUsMap from "../components/ContactUsMap";
+import ContactDetails from "../components/ContactDetails";
 
-const Contact = () => {
+const contact = () => {
   return (
-    <div className='bg-[#0d0e11] '>
-  
-<ContactDetails/>
+    <div className="bg-[#0d0e11] ">
+      <ContactDetails />
       {/* <ContactUsMap /> */}
-
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default contact;
