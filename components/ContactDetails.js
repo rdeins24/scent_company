@@ -6,7 +6,7 @@ function ContactDetails() {
       <div className="container flex flex-wrap px-5 py-24 mx-auto items-center">
         <div className="md:w-1/2 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-200">
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 bg-gradient-to-r from-pink-500 via-red-500 to-orange-500 bg-clip-text text-transparent ">
-            Pitchfork Kickstarter Taxidermy
+            !Pitchfork Kickstarter Taxidermy
           </h1>
           <p className="leading-relaxed text-base">
             Locavore cardigan small batch roof party blue bottle blog meggings sartorial jean shorts kickstarter migas sriracha church-key synth succulents. Actually taiyaki neutra, distillery gastropub pok pok ugh.
