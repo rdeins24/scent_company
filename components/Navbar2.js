@@ -18,17 +18,17 @@ const Navbar = () => {
       const navbar = document.getElementById("navbar");
 
       if (window.scrollY > 0) {
-        navbar.classList.add("bg-opacity-70"); // Set background opacity to 0.8
+        navbar.classList.add("bg-opacity-70"); 
       } else {
         navbar.classList.remove("bg-opacity-80");
       }
     };
 
-    // Attach the scroll event listener
+  
     window.addEventListener("scroll", handleScroll);
 
     return () => {
-      // Clean up the scroll event listener
+   
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
