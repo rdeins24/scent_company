@@ -126,13 +126,13 @@ const Navbar = () => {
             >
               Contact
             </Link>
-            <Link
+            {/* <Link
               href="/contact"
               onClick={closeMenu}
               className="hover:underline"
             >
               About
-            </Link>
+            </Link> */}
           </div>
         </div>
       )}
