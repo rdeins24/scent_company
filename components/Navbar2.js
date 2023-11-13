@@ -52,7 +52,7 @@ const Navbar = () => {
             Services
           </Link>
           <Link 
-          href="/contact" 
+          href="/Contact" 
           onClick={closeMenu} 
           className="hover:underline">
             Contact
@@ -120,7 +120,7 @@ const Navbar = () => {
               Services!
             </Link>
             <Link
-              href="/contact"
+              href="/Contact"
               onClick={closeMenu}
               className="hover:underline"
             >
