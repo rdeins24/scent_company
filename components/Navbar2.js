@@ -117,7 +117,7 @@ const Navbar = () => {
               onClick={closeMenu}
               className="hover:underline"
             >
-              Services
+              Services!
             </Link>
             <Link
               href="/contact"
