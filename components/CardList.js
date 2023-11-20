@@ -55,10 +55,10 @@ const Features = () => {
         <div className="md:text-6xl  text-3xl md:w-[60%] mx-auto text-center bg-gradient-to-r from-pink-500 via-red-500 to-orange-500 bg-clip-text text-transparent">
        
 
-          <h2 className="leading-[1.2]">
+          {/* <h2 className="leading-[1.2]">
             Suntem pasionati în furnizarea unui spectru complet de servicii de
             marketing digital, susținută de idei îndrăznețe și inovații.
-          </h2>
+          </h2> */}
      
 
         </div>

@@ -2,22 +2,24 @@ import Link from "next/link";
 
 function Footer1() {
   return (
-    <footer className=" text-white bg-black">
-      <div className="flex items-center justify-around ">
-        <div className="m-2 items-start relative w-full flex flex-row justify-between mt-8 ml-8 mr-8 max-w-7xl bg-black">
+    <footer className=" text-white bg-black ">
+      <div className="flex items-center justify-center ">
+        <div className="m-2 items-center  justify-center w-full flex flex-row  mt-8 ml-8 mr-8 max-w-15xl bg-black ">
           <div className="relative ">
-            <div className="bg-red p-3 space-y-10 md:grid md:grid-cols-2 md:-mt-6 lg:grid-cols-4 ">
-              <div className="w-1/2 md:ml-24 md:mt-9 md:w-3/4 400">
-                <h1 className="bg-gradient-to-r from-pink-500 via-red-500 to-orange-500 bg-clip-text text-transparent  text-xl font-medium">Company</h1>{" "}
+            <div className="bg-red p-3 space-y-10 md:grid md:grid-cols-2 md:-mt-6 lg:grid-cols-3 md:gap-[100px]">
+              <div className=" md:ml-24 md:mt-9  400">
+                <h1 className="bg-gradient-to-r from-pink-500 via-red-500 to-orange-500 bg-clip-text text-transparent  text-xl font-medium">
+                  Company
+                </h1>{" "}
                 <br />
                 <p className="text-gray-500 font-medium text-base hover:text-blue-600 ">
                   {" "}
                   Strada Studenților 9/11, <br />
-                  Chişinău Moldova<br /> 
+                  Chişinău Moldova
+                  <br />
                 </p>{" "}
-                
                 <br />
-                <p className="text-gray-500 font-medium text-base hover:text-blue-600 cursor-pointer">
+                <p className="text-gray-500 font-medium text-base hover:text-blue-600 cursor-pointer ">
                   {" "}
                   <strong className="tracking-wide text-blue-600 font-normal">
                     Phone:
@@ -41,38 +43,38 @@ function Footer1() {
                   <li>
                     {" "}
                     <i className="fa fa-chevron-right text-blue-600"></i>{" "}
-                    <a href="#" className="hover:text-blue-600">
+                    <Link href="/" className="hover:text-blue-600">
                       Home
-                    </a>{" "}
+                    </Link>{" "}
                   </li>
-                  <li>
+                  {/* <li>
                     {" "}
                     <i className="fa fa-chevron-right text-blue-600"></i>{" "}
-                    <a href="#" className="hover:text-blue-600">
+                    <Link href="#" className="hover:text-blue-600">
                       About Us
-                    </a>{" "}
-                  </li>
+                    </Link>{" "}
+                  </li> */}
                   <li>
                     {" "}
                     <i className="fa fa-chevron-right text-blue-600"></i>{" "}
-                    <a href="#" className="hover:text-blue-600">
+                    <Link href="/services" className="hover:text-blue-600">
                       Services
-                    </a>{" "}
+                    </Link>{" "}
                   </li>
                   <li>
                     {" "}
                     <i className="fa fa-chevron-right text-blue-600"></i>{" "}
-                    <a href="#" className="hover:text-blue-600">
-                      Terms of service
-                    </a>{" "}
+                    <Link href="/Contact" className="hover:text-blue-600">
+                      Contact
+                    </Link>{" "}
                   </li>
-                  <li>
+                  {/* <li>
                     {" "}
                     <i className="fa fa-chevron-right text-blue-600"></i>{" "}
-                    <a href="#" className="hover:text-blue-600">
+                    <Link href="#" className="hover:text-blue-600">
                       Privacy policy
-                    </a>{" "}
-                  </li>
+                    </Link>{" "}
+                  </li> */}
                 </ul>
               </div>
               <div className="leading-9 md:w-3/4 md:order-4 0">
@@ -84,68 +86,45 @@ function Footer1() {
                   <li>
                     {" "}
                     <i className="fa fa-chevron-right text-blue-600"></i>{" "}
-                    <a href="#" className="hover:text-blue-600">
-                     UX/UI  Design
-                    </a>{" "}
+                    <Link href="/services" className="hover:text-blue-600">
+                      UX/UI Design
+                    </Link>{" "}
                   </li>
                   <li>
                     {" "}
                     <i className="fa fa-chevron-right text-blue-600"></i>{" "}
-                    <a href="#" className="hover:text-blue-600">
+                    <Link href="/services" className="hover:text-blue-600">
                       Web Development
-                    </a>{" "}
+                    </Link>{" "}
                   </li>
-                  {/* <li>
-                    {" "}
-                    <i className="fa fa-chevron-right text-blue-600"></i>{" "}
-                    <a href="#" className="hover:text-blue-600">
-                      Product Management
-                    </a>{" "}
-                  </li> */}
+
                   <li>
                     {" "}
                     <i className="fa fa-chevron-right text-blue-600"></i>{" "}
-                    <a href="#" className="hover:text-blue-600">
+                    <Link href="/services" className="hover:text-blue-600">
                       Marketing
-                    </a>{" "}
+                    </Link>{" "}
                   </li>
                   <li>
                     {" "}
                     <i className="fa fa-chevron-right text-blue-600"></i>{" "}
-                    <a href="#" className="hover:text-blue-600">
+                    <Link href="/services" className="hover:text-blue-600">
                       Graphic Design
-                    </a>{" "}
+                    </Link>{" "}
                   </li>
                 </ul>
               </div>
-              <div className="md:order-2 lg:order-last">
-                <h1 className="bg-gradient-to-r from-pink-500 via-red-500 to-orange-500 bg-clip-text text-transparent  text-xl font-medium tracking-[0.030rem]">
-                  {" "}
-                  Join Our Newsletter{" "}
-                </h1>{" "}
-                <br />
-                <p className="text-gray-500 font-medium w-3/5 leading-7 mb-5 md:w-3/4">
-                  {" "}
-                  Join 25,000+ others and never miss out on new tips, tutorials,
-                  and more.{" "}
-                </p>
-                <input
-                  type="email"
-                  placeholder="Enter E-mail Here"
-                  className="py-1 px-2 placeholder-gray-400 rounded-tl-xl focus: outline-none focus:bordermd:w-1/2 lg:w-3/5 border"
-                />
-                <button className="text-white bg-gradient-to-r from-pink-500 via-red-500 to-orange-500  p-1 -translate-x-1 rounded-br-xl hover:bg-blue-500">
-                  {" "}
-                  Subscribe
-                </button>
-              </div>
+          
             </div>
             <div className="md:flex hidden bg-black p-3 flex-col text-center pt-5 space-y-8 md:flex-row md:justify-between md:space-y-0"></div>
             <footer className="text-gray-600 body-font">
               <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-                <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <Link
+                  href="/"
+                  className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+                >
                   <span className="ml-3 text-xl text-white">GUT UI.</span>
-                </a>
+                </Link>
                 <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
                   © 2023 GUT UI.
                 </p>
