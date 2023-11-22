@@ -2,12 +2,12 @@ import Link from "next/link";
 
 function Footer1() {
   return (
-    <footer className=" text-white bg-black ">
+    <footer className=" text-white bg-black max-w-[1280px] mx-auto ">
       <div className="flex items-center justify-center ">
-        <div className="m-2 items-center  justify-center w-full flex flex-row  mt-8 ml-8 mr-8 max-w-15xl bg-black ">
+        <div className="m-2 items-center  justify-center  flex flex-row   bg-black ">
           <div className="relative ">
-            <div className="bg-red p-3 space-y-10 md:grid md:grid-cols-2 md:-mt-6 lg:grid-cols-3 md:gap-[100px]">
-              <div className=" md:ml-24 md:mt-9  400">
+            <div className="bg-red p-3 space-y-10 md:grid md:grid-cols-2 md:-mt-6 lg:grid-cols-3 md:gap-[200px] ">
+              <div className=" md:ml-24 md:mt-9  400 ">
                 <h1 className="bg-gradient-to-r from-pink-500 via-red-500 to-orange-500 bg-clip-text text-transparent  text-xl font-medium">
                   Company
                 </h1>{" "}
