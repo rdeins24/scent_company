@@ -135,16 +135,16 @@ import {SiNextdotjs,SiSemanticweb,SiBrandfolder,SiGoogleads} from 'react-icons/s
 import {BsDatabaseGear} from 'react-icons/bs'
 
 const Card = ({ title, description, Icon }) => (
-  <div className="bg-gradient-to-b from-gray-900 via-purple-900 to-violet-600 border-gray-200 rounded-xl drop-shadow-md shadow-current p-5 h-auto w-[300px] hover:shadow-lg hover:transform hover:scale-105 duration-500 ease-in-out">
+  <div className="bg-gradient-to-b from-gray-900 via-purple-900 to-violet-900 border-gray-200 rounded-xl drop-shadow-md shadow-current p-5 h-auto w-[300px] hover:shadow-lg hover:transform hover:scale-105 duration-500 ease-in-out">
     <div className="flex flex-col justify-center items-center text-white p-2">
       <div className="bg-gradient-to-t from-gray-900 via-purple-900 to-violet-600 rounded-full p-2">
         {Icon && <Icon className="text-5xl" />}
       </div>
       <div className="text-xl font-bold mt-2">{title}</div>
       <p className="mt-10 leading-6">{description}</p>
-      <div className="pt-10">
+      {/* <div className="pt-10">
       {Icon && <Icon className="text-5xl" />}
-      </div>
+      </div> */}
     </div>
   </div>
 );

@@ -1,63 +1,93 @@
 import React from 'react';
+import styles from '../styles/jobs.module.css'; // Import your CSS file
 
-const Jobs2 = () => {
+const YourComponent = () => {
   return (
-    <section className="text-gray-600 body-font">
-      <div className="container px-5 py-24 mx-auto">
-        {/* Job 1 */}
-        <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
-          <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
-           Development
-          </div>
-          <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-            <h2 className="text-gray-900 text-lg title-font font-medium mb-2">Shooting Stars</h2>
-            <p className="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
-            <a className="mt-3 text-indigo-500 inline-flex items-center">Learn More
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </a>
-          </div>
+    <div className={styles.container} >
+      <div className={styles.card}>
+        <h3 className={styles.title}>Web Development </h3>
+        <div className={styles.bar}>
+          <div className={styles.emptybar}></div>
+          <div className={styles.filledbar}></div>
         </div>
-
-        {/* Job 2 */}
-        <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
-          <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-            <h2 className="text-gray-900 text-lg title-font font-medium mb-2">The Catalyzer</h2>
-            <p className="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
-            <a className="mt-3 text-indigo-500 inline-flex items-center">Learn More
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </a>
-          </div>
-          <div className="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
-        DESIGN  
-          </div>
-        </div>  
-
-        {/* Job 3 */}
-        <div className="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
-          <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
-              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-              <circle cx="12" cy="7" r="4"></circle>
-            </svg>
-          </div>
-          <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-            <h2 className="text-gray-900 text-lg title-font font-medium mb-2">The 400 Blows</h2>
-            <p className="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
-            <a className="mt-3 text-indigo-500 inline-flex items-center">Learn More
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </a>
-          </div>
+        <div className={styles.circle}>
+        <p className='flex px-10 mx-auto justify-center align-center'>uytcy iuytf iuyvo ouyg oyv oyv oiyuv </p>
+          <svg className={styles.yourSvgClass} version="1.1" xmlns="http://www.w3.org/2000/svg" width="120" height="120">
+            <defs>
+              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style={{ stopColor: '#FF0080', stopOpacity: 1 }} />
+                <stop offset="50%" style={{ stopColor: '#FF0000', stopOpacity: 1 }} />
+                <stop offset="100%" style={{ stopColor: '#FFA500', stopOpacity: 1 }} />
+              </linearGradient>
+            </defs>
+            <circle className={styles.stroke} cx="60" cy="60" r="30" stroke="url(#grad1)" strokeWidth="6" fill="none" />
+          </svg>
         </div>
-        <button className="flex mx-auto mt-20 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+      </div>      <div className={styles.card}>
+        <h3 className={styles.title}>Social Media</h3>
+        <div className={styles.bar}>
+          <div className={styles.emptybar}></div>
+          <div className={styles.filledbar}></div>
+        </div>
+        <div className={styles.circle}>
+        <p className='flex px-10 mx-auto justify-center align-center'>uytcy iuytf iuyvo ouyg oyv oyv oiyuv </p>
+          <svg className={styles.yourSvgClass} version="1.1" xmlns="http://www.w3.org/2000/svg" width="120" height="120">
+            <defs>
+              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style={{ stopColor: '#FF0080', stopOpacity: 1 }} />
+                <stop offset="50%" style={{ stopColor: '#FF0000', stopOpacity: 1 }} />
+                <stop offset="100%" style={{ stopColor: '#FFA500', stopOpacity: 1 }} />
+              </linearGradient>
+            </defs>
+            <circle className={styles.stroke} cx="60" cy="60" r="30" stroke="url(#grad1)" strokeWidth="6" fill="none" />
+          </svg>
+        </div>
+      </div>      <div className={styles.card}>
+        <h3 className={styles.title}>UI/UX</h3>
+        <div className={styles.bar}>
+          <div className={styles.emptybar}></div>
+          <div className={styles.filledbar}></div>
+        </div>
+        <div className={styles.circle}>
+        <p className='flex px-10 mx-auto justify-center align-center'>Ghid Complet pentru Crearea unui Magazin Online de Succes</p>
+          <svg className={styles.yourSvgClass} version="1.1" xmlns="http://www.w3.org/2000/svg" width="120" height="120">
+            <defs>
+              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style={{ stopColor: '#FF0080', stopOpacity: 1 }} />
+                <stop offset="50%" style={{ stopColor: '#FF0000', stopOpacity: 1 }} />
+                <stop offset="100%" style={{ stopColor: '#FFA500', stopOpacity: 1 }} />
+              </linearGradient>
+            </defs>
+            <circle className={styles.stroke} cx="60" cy="60" r="30" stroke="url(#grad1)" strokeWidth="6" fill="none" />
+          </svg>
+        </div>
+        
       </div>
-    </section>
+      <div className={styles.card}>
+        <h3 className={styles.title}> Marketing</h3>
+        <div className={styles.bar}>
+          <div className={styles.emptybar}></div>
+          <div className={styles.filledbar}></div>
+        </div>
+        <div className={styles.circle}>
+        <p className='flex px-10 mx-auto justify-center align-center'>Ghid Complet pentru Crearea unui Magazin Online de Succes</p>
+          <svg className={styles.yourSvgClass} version="1.1" xmlns="http://www.w3.org/2000/svg" width="120" height="120">
+            <defs>
+              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style={{ stopColor: '#FF0080', stopOpacity: 1 }} />
+                <stop offset="50%" style={{ stopColor: '#FF0000', stopOpacity: 1 }} />
+                <stop offset="100%" style={{ stopColor: '#FFA500', stopOpacity: 1 }} />
+              </linearGradient>
+            </defs>
+            <circle className={styles.stroke} cx="60" cy="60" r="30" stroke="url(#grad1)" strokeWidth="6" fill="none" />
+          </svg>
+        </div>
+        
+      </div>
+      {/* Repeat similar structures for other cards */}
+    </div>
   );
 };
 
-export default Jobs2;
+export default YourComponent;
+

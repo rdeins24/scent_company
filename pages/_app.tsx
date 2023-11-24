@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <Layout>
       <SizeObserver>
         <ScrollObserver>
-          <div className={`${inter.variable} font-mono font-inter`}>
+          <div >
             <Component {...pageProps} />
           </div>
         </ScrollObserver>

@@ -21,7 +21,11 @@ import Button from "../components/Button";
 import ButtonGlowHover from "../components/ButtonGlowHover";
 // const inter = Inter({ subsets: ["latin"] });
 import Member from "../components/member";
-import Hero2 from '../components/Hero2'
+import Hero2 from "../components/Hero2";
+import Hero3 from "../components/Hero3";
+import Jobs2 from "../components/Jobs2";
+import CardMobile from "../components/CardMobile";
+import CardInteractive from "../components/CardInteractive";
 
 const Home = () => {
   return (
@@ -32,13 +36,24 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* <Hero /> */}
-{/* <Member/> */}
+      {/* <Member/> */}
       {/* <ButtonGlowHover/> */}
-      <Hero/>
+      {/* <Hero /> */}
+      <Hero3 />
+      {/* <Jobs2 /> */}
+      <div className=" hidden md:block">
+        <CardInteractive />
+      </div>
+      {/* <CardInteractive /> */}
+      <div className="block md:hidden ">
+        <CardMobile />
+      </div>
+      {/* <CardInteractive /> */}
+
       <Skills />
-      <CardList />
+      {/* <CardList /> */}
       <div className="mx-auto text-center mb-10">
-        <Button href="/services" content="Vezi Toate" />
+        {/* <Button href="/services" content="Vezi Toate" /> */}
       </div>
       <Works />
 
