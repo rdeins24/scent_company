@@ -28,7 +28,7 @@ const GradientCircle = () => (
   </svg>
 );
 
-const Card = ({ title, mlValue,description }) => (
+const Card = ({ title,description }) => (
   <div className={styles.card}>
     <h3 className={styles.title}>{title}</h3>
     <div className={styles.bar}>
@@ -36,7 +36,7 @@ const Card = ({ title, mlValue,description }) => (
       <div className={styles.filledbar}></div>
     </div>
     <div className={styles.circle}>
-      <p className={`flex ml-[${mlValue}] mx-auto justify-center align-center`}>
+      <p className="flex ml-[-35px] mx-auto justify-center align-center">
         {description}
       </p>
       <GradientCircle />
@@ -47,11 +47,12 @@ const Card = ({ title, mlValue,description }) => (
 const YourComponent = () => {
   return (
     <div className={styles.container}>
-      <Card title="Web Development" mlValue="0px" description='We love building and shaping brands tConstruim conexiuni, creăm' />
-      <Card title="Social Media" mlValue="[-30px]" description='We love building and shaping brands Construim conexiuni, creămth'/>
-      <Card title="UI/UX" mlValue="[-30px]" description='We love building and shaping brandsConstruim conexiuni, creăm th'/>
-      <Card title="Marketing" mlValue="[-30px]" description='We love building and shaping brandsConstruim conexiuni, creăm th'/>
-      {/* Add other cards as needed */}
+      <Card title="Web Development"  description='We love building and shaping brands tConstruim conexiuni, creăm' />
+      <Card title="Social Media"  description='We love building and shaping brands Construim conexiuni, creămth'/>
+      <Card title="UI/UX"  description='We love building and shaping brandsConstruim conexiuni, creăm th'/>
+      <Card title="Marketing"  description='We love building and shaping brandsConstruim conexiuni, creăm th'/>
+
+  
     </div>
   );
 };

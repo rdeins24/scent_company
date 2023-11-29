@@ -6,6 +6,7 @@ import HorizontalTimeline from "../components/Services/HorizontalTimeline";
 import VerticalTimeline from "../components/Services/VerticalTimeline";
 import Card from "../components/Cards";
 import BuildingBlock from "../components/BuildingBlock";
+import ServicesCards from '../components/Services/ServicesCards'
 
 const Services = () => {
   return (
@@ -15,7 +16,11 @@ const Services = () => {
       <HorizontalTimeline />
       <VerticalTimeline />
       <Block />
-      <Card />
+      <div className="pb-[50px]">
+
+      <ServicesCards/>
+      </div>
+      {/* <Card /> */}
       {/* <OurServices/> */}
     </div>
   );
