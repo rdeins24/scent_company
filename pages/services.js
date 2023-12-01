@@ -7,6 +7,7 @@ import VerticalTimeline from "../components/Services/VerticalTimeline";
 import Card from "../components/Cards";
 import BuildingBlock from "../components/BuildingBlock";
 import ServicesCards from '../components/Services/ServicesCards'
+import Head from "next/head";
 
 const Services = () => {
   return (
