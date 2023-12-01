@@ -11,6 +11,13 @@ import ServicesCards from '../components/Services/ServicesCards'
 const Services = () => {
   return (
     <div className="bg-[#0d0e11] ">
+<Head>
+  <title>Servicii de Marketing Digital, Dezvoltare Web | GUTUI</title>
+  <meta name="description" content="Descoperă serviciile de marketing digital și dezvoltare web oferite de GUTUI pentru a-ți transforma afacerea. Cu expertiza noastră în domeniu, oferim soluții personalizate, incluzând marketing digital, design UX/UI, dezvoltare web și grafică. Află cum îți putem optimiza prezența online și cum te putem ajuta să-ți crești afacerea." />
+  <link rel="icon" href="/favicon.ico" />
+</Head>
+
+
       <Hero />
       <BuildingBlock />
       <HorizontalTimeline />
