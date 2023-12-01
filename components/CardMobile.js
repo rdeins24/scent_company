@@ -5,14 +5,17 @@ const YourComponent = () => {
   return (
     <div className={styles.container}>
       <div className={styles.card}>
-        <h3 className={styles.title}>!Web Development </h3>
+        <h3 className={styles.title}>Web Development </h3>
         <div className={styles.bar}>
           <div className={styles.emptybar}></div>
           <div className={styles.filledbar}></div>
         </div>
         <div className={styles.circle}>
-          <p className="flex px-10 mx-auto justify-center align-center">
-            uytcy iuytf iuyvo ouyg oyv oyv oiyuv{" "}
+          <p className="flex px-10 mx-auto justify-center align-center leading-5">
+            Echipa noastră full-stack creează produse de top folosind diverse
+            tehnologii , de la aplicații mobile la site-uri web. Acoperim
+            frontend, backend și oferim consultanță în arhitectură și securitate
+            cibernetică
           </p>
           <svg
             className={styles.yourSvgClass}
@@ -56,8 +59,11 @@ const YourComponent = () => {
           <div className={styles.filledbar}></div>
         </div>
         <div className={styles.circle}>
-          <p className="flex px-10 mx-auto justify-center align-center">
-            uytcy iuytf iuyvo ouyg oyv oyv oiyuv{" "}
+          <p className="flex px-10 mx-auto justify-center align-center leading-5">
+            Cream conținut captivant și strategic, amplificând prezența online a
+            afacerii dvs. De la strategii de marketing la gestionarea
+            platformelor, vă conectăm cu publicul și promovăm brandul în mediul
+            digita
           </p>
           <svg
             className={styles.yourSvgClass}
@@ -101,8 +107,11 @@ const YourComponent = () => {
           <div className={styles.filledbar}></div>
         </div>
         <div className={styles.circle}>
-          <p className="flex px-10 mx-auto justify-center align-center">
-            Ghid Complet pentru Crearea unui Magazin Online de Succes
+          <p className="flex px-10 mx-auto justify-center align-center leading-5">
+            Construim experiențe digitale remarcabile, integrând design-ul
+            intuitiv și funcționalitatea optimă, pentru a atrage și fideliza
+            utilizatorii pe website-ul dvs., generând astfel conversii
+            semnificative și creșterea afacerii
           </p>
           <svg
             className={styles.yourSvgClass}
@@ -146,8 +155,11 @@ const YourComponent = () => {
           <div className={styles.filledbar}></div>
         </div>
         <div className={styles.circle}>
-          <p className="flex px-10 mx-auto justify-center align-center">
-            Ghid Complet pentru Crearea unui Magazin Online de Succes
+          <p className="flex px-10 mx-auto justify-center align-center leading-5">
+            Noi excelăm în strategii de marketing inovatoare, amplificând
+            vizibilitatea și angajamentul clienților. De la analize de piață la
+            campanii creative, suntem partenerul ideal pentru succesul afacerii
+            tale
           </p>
           <svg
             className={styles.yourSvgClass}
