@@ -25,7 +25,7 @@ function ContactDetails() {
                 href="mailto:info@gmail.com"
                 class="text-gray-500 font-medium text-base hover:text-blue-600 cursor-pointer block w-full py-2"
               >
-                Email: info@gmail.com
+              info@gmail.com
               </a>
             </li>
             <li className="">

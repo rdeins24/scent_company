@@ -21,7 +21,7 @@ function Footer1() {
                 <br />
                 <a
                   href="tel:+37368434424"
-                  className="text-gray-500 font-medium text-base hover:text-blue-600 cursor-pointer"
+                  className="text-gray-500 font-medium text-base hover:text-blue-600 cursor-pointer  block w-full py-2"
                 >
                   <strong className="tracking-wide text-blue-600 font-normal">
                     Phone:
@@ -31,7 +31,7 @@ function Footer1() {
                 <br></br>
                 <a
                   href="mailto:info@gmail.com"
-                  className="text-gray-500 font-medium text-base hover:text-blue-600 cursor-pointer"
+                  className="text-gray-500 font-medium text-base hover:text-blue-600 cursor-pointer  block w-full py-2"
                 >
                   <strong className="tracking-wide text-blue-600 font-normal">
                     Email:
