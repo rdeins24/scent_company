@@ -91,9 +91,9 @@ const Navbar = () => {
       {menuOpen && (
         <div className="md:hidden fixed top-0 left-0 right-0 bottom-0 bg-black">
           <div className="max-w-[1240px] mx-auto p-4 flex items-center justify-between">
-            <div className="text-xl font-bold text-white">
+            <div className="text-xl font-bold text-white ">
               <Link href="/" onClick={closeMenu}>
-                GÜT UI<span className="text-red">.</span>
+              GUT UI<span className="text-red-600 text-xl"> .</span>
               </Link>
             </div>
             <button className="md:hidden" onClick={toggleMenu}>
@@ -110,7 +110,7 @@ const Navbar = () => {
               </svg>
             </button>
           </div>
-          <div className="text-white text-4xl mt-8 flex flex-col space-y-4 pl-5">
+          <div className="text-white text-5xl mt-8 flex flex-col space-y-7 pl-5 items-center ">
           <Link
               href="/"
               onClick={closeMenu}
@@ -123,7 +123,7 @@ const Navbar = () => {
               onClick={closeMenu}
               className="hover:underline"
             >
-              Services
+              Servicii
             </Link>
             <Link
               href="/Contact"
