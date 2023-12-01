@@ -28,7 +28,7 @@ const GradientCircle = () => (
   </svg>
 );
 
-const Card = ({ title,description }) => (
+const Card = ({ title, description }) => (
   <div className={styles.card}>
     <h3 className={styles.title}>{title}</h3>
     <div className={styles.bar}>
@@ -36,7 +36,7 @@ const Card = ({ title,description }) => (
       <div className={styles.filledbar}></div>
     </div>
     <div className={styles.circle}>
-      <p className="flex ml-[-35px] mx-auto justify-center align-center">
+      <p className="flex ml-[-35px] mx-auto justify-center align-center leading-5 text-gray-300 font-semibold">
         {description}
       </p>
       <GradientCircle />
@@ -47,12 +47,22 @@ const Card = ({ title,description }) => (
 const YourComponent = () => {
   return (
     <div className={styles.container}>
-      <Card title="Web Development"  description='We love building and shaping brands tConstruim conexiuni, creăm' />
-      <Card title="Social Media"  description='We love building and shaping brands Construim conexiuni, creămth'/>
-      <Card title="UI/UX"  description='We love building and shaping brandsConstruim conexiuni, creăm th'/>
-      <Card title="Marketing"  description='We love building and shaping brandsConstruim conexiuni, creăm th'/>
-
-  
+      <Card
+        title="Web Development"
+        description="Echipa noastră full-stack creează produse de top folosind diverse tehnologii , de la aplicații mobile la site-uri web. Acoperim  frontend, backend și oferim consultanță în arhitectură și securitate cibernetică"
+      />
+      <Card
+        title="Social Media"
+        description="Cream conținut captivant și strategic, amplificând prezența online a afacerii dvs. De la strategii de marketing la gestionarea platformelor, vă conectăm cu publicul și promovăm brandul în mediul digita"
+      />
+      <Card
+        title="UI/UX"
+        description="Construim experiențe digitale remarcabile, integrând design-ul intuitiv și funcționalitatea optimă, pentru a atrage și fideliza utilizatorii pe website-ul dvs., generând astfel conversii semnificative și creșterea afacerii."
+      />
+      <Card
+        title="Marketing"
+        description="Noi excelăm în strategii de marketing inovatoare, amplificând vizibilitatea și angajamentul clienților. De la analize de piață la campanii creative, suntem partenerul ideal pentru succesul afacerii tale"
+      />
     </div>
   );
 };

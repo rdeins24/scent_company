@@ -2,7 +2,7 @@
   /* position: absolute; */
   margin-left: 100px;
   height: 300px;
-  width: 800px;
+  width: 900px;
   top: 60px;
   left: calc(50% - 300px);
   display: flex;
@@ -13,7 +13,7 @@
 
 .card {
   display: flex;
-  height: 380px;
+  height: 430px;
   width: 300px;
   background-color: #17141d;
   border-radius: 10px;
@@ -38,7 +38,7 @@
 
 .card:hover ~ .card {
   position: relative;
-  left: 50px;
+  left: 70px;
   transition: 0.4s ease-out;
 
 
@@ -50,6 +50,7 @@
   position: absolute;
   left: 20px;
   top: 15px;
+  font-size:x-large;
 }
 
 .bar {
@@ -85,7 +86,7 @@
 }
 
 .card:hover .filledbar {
-  width: 120px;
+  width:100%;
   transition: 0.4s ease-out;
 }
 

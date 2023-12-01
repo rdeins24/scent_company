@@ -19,20 +19,25 @@ function Footer1() {
                   <br />
                 </p>{" "}
                 <br />
-                <p className="text-gray-500 font-medium text-base hover:text-blue-600 cursor-pointer ">
-                  {" "}
+                <a
+                  href="tel:+37368434424"
+                  className="text-gray-500 font-medium text-base hover:text-blue-600 cursor-pointer"
+                >
                   <strong className="tracking-wide text-blue-600 font-normal">
                     Phone:
                   </strong>
-                  +373 68 43 44 24{" "}
-                </p>
-                <p className="text-gray-500 font-medium text-base hover:text-blue-600 cursor-pointer">
-                  {" "}
+                  +373 68 43 44 24
+                </a>
+                <br></br>
+                <a
+                  href="mailto:info@gmail.com"
+                  className="text-gray-500 font-medium text-base hover:text-blue-600 cursor-pointer"
+                >
                   <strong className="tracking-wide text-blue-600 font-normal">
                     Email:
                   </strong>{" "}
-                  info@gmail.com{" "}
-                </p>
+                  info@gmail.com
+                </a>
               </div>
               <div className="leading-9 md:w-2/4 md:order-3 md:ml-24 ">
                 <h1 className="bg-gradient-to-r from-pink-500 via-red-500 to-orange-500 bg-clip-text text-transparent  text-xl font-medium tracking-[0.030rem]">
@@ -47,13 +52,7 @@ function Footer1() {
                       Home
                     </Link>{" "}
                   </li>
-                  {/* <li>
-                    {" "}
-                    <i className="fa fa-chevron-right text-blue-600"></i>{" "}
-                    <Link href="#" className="hover:text-blue-600">
-                      About Us
-                    </Link>{" "}
-                  </li> */}
+
                   <li>
                     {" "}
                     <i className="fa fa-chevron-right text-blue-600"></i>{" "}
@@ -68,13 +67,6 @@ function Footer1() {
                       Contact
                     </Link>{" "}
                   </li>
-                  {/* <li>
-                    {" "}
-                    <i className="fa fa-chevron-right text-blue-600"></i>{" "}
-                    <Link href="#" className="hover:text-blue-600">
-                      Privacy policy
-                    </Link>{" "}
-                  </li> */}
                 </ul>
               </div>
               <div className="leading-9 md:w-3/4 md:order-4 0">
@@ -114,7 +106,6 @@ function Footer1() {
                   </li>
                 </ul>
               </div>
-          
             </div>
             <div className="md:flex hidden bg-black p-3 flex-col text-center pt-5 space-y-8 md:flex-row md:justify-between md:space-y-0"></div>
             <footer className="text-gray-600 body-font">
@@ -202,4 +193,3 @@ function Footer1() {
 }
 
 export default Footer1;
-

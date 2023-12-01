@@ -3,32 +3,28 @@ import React from "react";
 const Timeline = () => {
   const timelineData = [
     {
-      color: "gray",
-      number: "1",
-      title: "Strategy",
+      title: "Strategia",
       description:
-        "Using data insight and experience, we unlock your brand’s potential through social media – all by building a full marketing strategy around a specific set of KPIs or objectives. Through efficiency and professionalism, we deliver impactful results all year round.",
+        "Definim și elaborăm direcțiile strategice, obiectivele și planurile pentru proiect, luând în considerare analiza publicului țintă, tendințele pieței și concurența. Abordăm creativ și eficient fiecare etapă a strategiei pentru a maximiza impactul și performanța",
+      color: "gray",
     },
     {
-      color: "red",
-      number: "2",
       title: "Creative",
       description:
-        "Using data insight and experience, we unlock your brand’s potential through social media – all by building a full marketing strategy around a specific set of KPIs or objectives. Through efficiency and professionalism, we deliver impactful results all year round.",
+        "Creăm și producem conținut unic, adaptat brandului și necesităților sale. De la conținut scris până la materiale multimedia, lucrăm la un conținut captivant și relevant care să rezoneze cu audiența și să consolideze identitatea brandului.",
+      color: "red",
     },
     {
+      title: "Implementare",
+      description:
+        "Aducem la viață strategiile și conținutul dezvoltat. Implementăm cu atenție planurile, lansăm campanii de marketing și optimizăm platformele digitale pentru a oferi o experiență de utilizare optimă și pentru a maximiza performanța proiectului.",
       color: "blue",
-      number: "3",
-      title: "Media",
-      description:
-        "Using data insight and experience, we unlock your brand’s potential through social media – all by building a full marketing strategy around a specific set of KPIs or objectives. Through efficiency and professionalism, we deliver impactful results all year round.",
     },
     {
-      color: "purple",
-      number: "4",
-      title: "Performance",
+      title: "Performanță",
       description:
-        "Using data insight and experience, we unlock your brand’s potential through social media – all by building a full marketing strategy around a specific set of KPIs or objectives. Through efficiency and professionalism, we deliver impactful results all year round.",
+        "Monitorizăm și analizăm constant rezultatele și performanța proiectului. Folosim datele și analizele pentru a evalua succesul campaniilor și pentru a ajusta și optimiza continuu strategiile pentru a atinge obiectivele stabilite",
+      color: "purple",
     },
   ];
 

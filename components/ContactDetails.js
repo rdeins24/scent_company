@@ -9,7 +9,7 @@ function ContactDetails() {
            Contacteaza-ne
           </h1>
           <p className="leading-relaxed text-base">
-            Locavore cardigan small batch roof party blue bottle blog meggings sartorial jean shorts kickstarter migas sriracha church-key synth succulents. Actually taiyaki neutra, distillery gastropub pok pok ugh.
+          Suntem aici pentru tine. Dacă ai întrebări, sugestii sau vrei să afli mai multe despre serviciile noastre, te rugăm să nu eziti să ne contactezi. Echipa noastră este disponibilă pentru a oferi suport și răspunsuri la orice nelămuriri ai avea.
           </p>
 
         </div>
@@ -20,16 +20,22 @@ function ContactDetails() {
           <nav className="flex flex-wrap list-none -mb-1">
           
             <li className="lg:w-1/3 mb-1 w-1/2">
-              <a className="text-blue-600 hover:text-white">test@gutui.md</a>
+            <a
+                  href="mailto:info@gmail.com"
+                  className="text-blue-600 hover:text-white cursor-pointer"
+                >
+                  <strong className="tracking-wide text-blue-600 font-normal">
+                    Email:
+                  </strong>{" "}
+                  info@gmail.com
+                </a>
             </li>
             <li className="lg:w-1/3 mb-1 w-1/2">
             <a href="tel:+37358434424" className="text-blue-600 hover:text-white">Mob +37358434424</a>
 
             </li>
       
-            <li className="lg:w-1/3 mb-1 w-1/2">
-              <a className="text-blue-600 hover:text-white">St. Studenților 9/11</a>
-            </li>
+ 
           </nav>
         </div>
       </div>
