@@ -45,7 +45,7 @@ function Hero({ main_description }) {
         }}
       >
         <p
-          className="md:text-[1500px] mt-[-650px] text-[700px] bg-gradient-to-tr from-gray-700 via-current to-blue-200 bg-clip-text text-transparent  md:mt-[-350px] font-mono "
+          className="md:text-[1500px] mt-[-580px] text-[700px] bg-gradient-to-tr from-gray-700 via-current to-blue-200 bg-clip-text text-transparent  md:mt-[-350px] font-mono mr-7"
           alt="scroll"
         >
           G
