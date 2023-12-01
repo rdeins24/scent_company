@@ -20,22 +20,25 @@ function ContactDetails() {
             CONTACTE
           </h2>
           <nav className="flex flex-wrap list-none -mb-1 gap-5">
+            <ul>
+
             <li className=" ">
               <a
                 href="mailto:info@gmail.com"
                 class="text-gray-500 font-medium text-base hover:text-blue-600 cursor-pointer block w-full py-2"
-              >
-              info@gmail.com
+                >
+             Email: info@gmail.com
               </a>
             </li>
             <li className="">
               <a
                 href="tel:+37368434424"
                 class="text-gray-500 font-medium text-base hover:text-blue-600 cursor-pointer block w-full py-2"
-              >
+                >
                 Phone: +373 68 43 44 24
               </a>
             </li>
+                </ul>
           </nav>
         </div>
       </div>
