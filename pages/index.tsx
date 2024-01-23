@@ -8,6 +8,8 @@ import Blog from "../components/Blog";
 import HorizontalTimeline from "../components/Services/HorizontalTimeline";
 import VerticalTimeline from "../components/Services/VerticalTimeline";
 import BuildingBlock from "../components/BuildingBlock";
+import Hero2 from "../components/Hero2";
+import Hero from "../components/Hero";
 import Hero3 from "../components/Hero3";
 import CardMobile from "../components/CardMobile";
 import CardInteractive from "../components/CardInteractive";
@@ -21,7 +23,8 @@ const Home = () => {
     {/* <link rel="icon" href="/favicon.ico" /> */}
 </Head>
 
-      <Hero3 />
+      {/* <Hero3 /> */}
+      <Hero2/>
       <div className=" hidden md:block">
         <CardInteractive />
       </div>
