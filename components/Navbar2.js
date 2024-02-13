@@ -41,7 +41,7 @@ const Navbar = () => {
       <div className="max-w-[1240px] mx-auto flex items-center justify-between">
         <div className="text-xl font-bold">
           <Link href="/" onClick={closeMenu}>
-            GUT UI<span className="text-red-600 text-xl"> .</span>
+            Scent Company<span className="text-red-600 text-xl"> .</span>
           </Link>
         </div>
         <div className="hidden md:flex space-x-4">
@@ -93,7 +93,7 @@ const Navbar = () => {
           <div className="max-w-[1240px] mx-auto p-4 flex items-center justify-between">
             <div className="text-xl font-bold text-white ">
               <Link href="/" onClick={closeMenu}>
-              GUT UI<span className="text-red-600 text-xl"> .</span>
+              Scent Company<span className="text-red-600 text-xl"> .</span>
               </Link>
             </div>
             <button className="md:hidden" onClick={toggleMenu}>

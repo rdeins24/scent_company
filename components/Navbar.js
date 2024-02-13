@@ -11,7 +11,7 @@ const Navbar = () => {
   };
   return (
     <div className=" flex justify-between items-center h-20 max-w-[1240px] mx-auto px-4 bg-black ">
-      <h1 className="w-full text-3xl font-bold  "><Link href='/'>GUT UI.</Link></h1>
+      <h1 className="w-full text-3xl font-bold  "><Link href='/'>GUTqq UI.</Link></h1>
       <ul className="hidden md:flex">
         <li className="p-4">
           <Link href="/">Home</Link>{" "}
