@@ -10,14 +10,14 @@ import ThreeColumn from "../components/ThreeColumn";
 import Testimonials from "../components/testimonials";
 import Workflow from "../components/Workflow";
 import FeatureSection from '../components/Main/FeatureSection'
-
+import MySection from '../components/Main/MySection'
+import HomePage  from '../components/Main/HomePage '
 const Home = () => {
   return (
-    <div className="bg-[#0d0e11] ">
+    <div >
       <Head>
         <title>
-          GUTUI - Soluții Digitale pentru Afacerea Ta | Google, Facebook, Social
-          Media
+     
         </title>
         <meta
           name="description"
@@ -27,6 +27,9 @@ const Home = () => {
       </Head>
 
       <Hero2 />
+      {/* <HomePage /> */}
+      <MySection/>
+      
       <ThreeColumn />
       <FeatureSection/>
       <ThreeColumn />

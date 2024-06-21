@@ -13,16 +13,16 @@ const slidesData = [
 
   {
     bgColor: "#5e0000",
-    subttitle: "IDEAS",
+    subttitle: "",
     description:
-      "torming plenty of ideasy, yet is grounded by practicality - that is how we make sure every campaign is tailored to give your audience the best experience of your brand.",
+      "",
     imgSrc: "/expert.jpg",
   },
   {
     bgColor: "#1f1f1f",
-    subttitle: "MARKETING",
+    subttitle: "",
     description:
-      "torming plenty of inality, yet is grounded by practicality - that is how we make sure every campaign is tailored to give your audience the best experience of your brand.",
+      "",
     imgSrc: "/brand.jpg",
   },
 ];
