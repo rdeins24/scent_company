@@ -22,7 +22,7 @@ export default function Example() {
             src={insta}
             width={1100}
             height={700}
-            alt=""
+            alt="Instagram"
           />
         </div>
         <section className="text-gray-600 body-font">
@@ -40,14 +40,14 @@ export default function Example() {
                   Blue bottle crucifix vinyl post-ironic four dollar toast vegan
                   taxidermy. Gastropub indxgo juice poutine.
                 </p>
-                <a className="mt-3 text-indigo-500 inline-flex items-center">
+                <a href="#" className="mt-3 text-indigo-500 inline-flex items-center">
                   Learn More
                   <svg
                     fill="none"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     className="w-4 h-4 ml-2"
                     viewBox="0 0 24 24"
                   >
@@ -67,14 +67,14 @@ export default function Example() {
                   Blue bottle crucifix vinyl post-ironic four dollar toast vegan
                   taxidermy. Gastropub indxgo juice poutine.
                 </p>
-                <a className="mt-3 text-indigo-500 inline-flex items-center">
+                <a href="#" className="mt-3 text-indigo-500 inline-flex items-center">
                   Learn More
                   <svg
                     fill="none"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     className="w-4 h-4 ml-2"
                     viewBox="0 0 24 24"
                   >
@@ -93,9 +93,9 @@ export default function Example() {
                 <svg
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   className="sm:w-16 sm:h-16 w-10 h-10"
                   viewBox="0 0 24 24"
                 >
@@ -111,14 +111,14 @@ export default function Example() {
                   Blue bottle crucifix vinyl post-ironic four dollar toast vegan
                   taxidermy. Gastropub indxgo juice poutine.
                 </p>
-                <a className="mt-3 text-indigo-500 inline-flex items-center">
+                <a href="#" className="mt-3 text-indigo-500 inline-flex items-center">
                   Learn More
                   <svg
                     fill="none"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     className="w-4 h-4 ml-2"
                     viewBox="0 0 24 24"
                   >
