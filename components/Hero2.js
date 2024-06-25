@@ -9,6 +9,7 @@ const slidesData = [
     description:
       "Storming plenty grounded by practicality - that is how we make sure every campaign is tailored to give your audience the best experience of your brand.",
     imgSrc: "/scent.jpg", // Replace with the appropriate image source for each slide
+    alt:"creative olfactive marketing"
   },
 
   {
@@ -17,6 +18,7 @@ const slidesData = [
     description:
       "",
     imgSrc: "/expert.jpg",
+     alt:" olfactive marketing"
   },
   {
     bgColor: "#1f1f1f",
@@ -24,6 +26,7 @@ const slidesData = [
     description:
       "",
     imgSrc: "/brand.jpg",
+     alt:"creative  marketing"
   },
 ];
 
@@ -46,9 +49,11 @@ const HeroSection = () => {
       <div className="absolute top-0 left-0 w-full h-full z-0">
         <Image
           src={slidesData[currentSlide].imgSrc}
+          alt={slidesData[currentSlide].alt}
           layout="fill"
           objectFit="cover"
           objectPosition="center"
+        
         />
       </div>
 
