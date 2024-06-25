@@ -40,7 +40,7 @@ const HeroSection = () => {
   return (
     <div
       className="hero-section relative h-screen overflow-hidden flex items-center justify-center"
-      style={{ backgroundColor: slidesData[currentSlide].bgColor }}
+      style={{ backgroundColor: slidesData[currentSlide] }}
     >
       {/* Image container */}
       <div className="absolute top-0 left-0 w-full h-full z-0">

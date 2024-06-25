@@ -27,6 +27,7 @@ const Home = () => {
       </Head>
 
       <Hero2 />
+     
       {/* <HomePage /> */}
       <MySection/>
       
