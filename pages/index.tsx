@@ -9,32 +9,44 @@ import ThreeColumn from "../components/ThreeColumn";
 import Testimonials from "../components/testimonials";
 import FeatureSection from "../components/Main/FeatureSection";
 import MySection from "../components/Main/MySection";
+import InfoSection from '../components/InfoSection'
+import logo from '../public/assets/logo/scentio.png'
 const Home = () => {
   return (
     <div>
-      <Head>
-        <title>
-          Scentio Milano - Soluții de Marketing Olfactiv | Parfumuri Ambientale
-          Personalizate
-        </title>
+     <Head>
+        <title>Scentio Milano - Soluții de Marketing Olfactiv | Parfumuri Ambientale Personalizate</title>
         <meta
           name="description"
-          content="La Scentio Milano oferim soluții de marketing olfactiv pentru a îmbunătăți experiența clienților și a crește brandul tău. Descoperă cum aromele ambientale pot transforma spațiul tău comercial, showroom-urile și hotelurile. Oferim consultanță specializată și servicii de difuzare a parfumurilor personalizate pentru afacerea ta."
+          content="La Scentio Milano oferim soluții de marketing olfactiv pentru a îmbunătăți experiența clienților și a crește vizibilitatea brandului tău. Descoperă cum aromele ambientale pot transforma spațiul tău comercial, showroom-urile și hotelurile. Oferim consultanță specializată și servicii de difuzare a parfumurilor personalizate pentru afacerea ta."
         />
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <meta
+          name="keywords"
+          content="marketing olfactiv, parfumuri ambientale, Scentio Milano, soluții olfactive, arome personalizate, difuzare parfumuri, îmbunătățirea experienței clienților, creșterea brandului, consultanță olfactivă"
+        />
+        <link rel="icon" href="/assets/logo/scentio.png" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.scentiomilano.com",
+            "logo": "https://www.scentiomilano.com/assets/logo/scentio.png"
+          })}
+        </script>
       </Head>
 
       <Hero2 />
+      <InfoSection/>
 
-      <MySection />
+      {/* <MySection /> */}
 
+      <Skills />
       <ThreeColumn />
-      <FeatureSection />
+      {/* <FeatureSection /> */}
       <ThreeColumn />
       <Testimonials />
       <ThreeColumn />
 
-      <Skills />
       <div className="mx-auto text-center mb-10"></div>
       <ThreeColumn />
 

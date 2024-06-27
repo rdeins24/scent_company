@@ -29,8 +29,8 @@ const Skills: React.FC = () => {
   }
 
   return (
-    <div ref={refContainer} className="bg-[#0d0e11]">
-      <div className=" min-h-screen max-w-5xl mx-auto px-10 lg:px-20 py-24 md:py-28 lg:py-36 flex flex-col justify-center items-center text-4xl md:text-6xl lg:text-6xl tracking-tight font-semibold text-gray-300 ">
+    <div ref={refContainer} className="bg-[white]">
+      <div className=" min-h-screen max-w-5xl mx-auto px-10 lg:px-20 py-24 md:py-28 lg:py-36 flex flex-col justify-center items-center text-4xl md:text-6xl lg:text-6xl tracking-tight font-semibold text-black">
         <div className="leading-[1.25]">
           <div
             className={s.skillText}
@@ -38,24 +38,21 @@ const Skills: React.FC = () => {
               opacity: opacityForBlock(progress, 0),
             }}
           >
-          Construim conexiuni, creăm branduri, inspirăm succes.
-          </div>
+Construim conexiuni, creăm branduri, inspirăm succes.          </div>
           <span
-            className={`${s.skillText} inline-block after:content-['_'] text-gray-300`}
+            className={`${s.skillText} inline-block after:content-['_'] text-black`}
             style={{
               opacity: opacityForBlock(progress, 1),
             }}
           >
-         Creăm povestea ta de succes digital.
-          </span>
+Creăm povestea ta de succes prin arome.          </span>
           <span
-            className={`${s.skillText} inline-block text-gray-300`}
+            className={`${s.skillText} inline-block text-black`}
             style={{
               opacity: opacityForBlock(progress, 2),
             }}
           >
-          Conectăm brandurile la inimile și mințile consumatorilor online
-          </span>
+Conectăm brandurile la inimile si mintile consumatorilor.        </span>
         </div>
       </div>
     </div>
