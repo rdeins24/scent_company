@@ -24,7 +24,7 @@ const Home = () => {
           name="keywords"
           content="marketing olfactiv, parfumuri ambientale, Scentio Milano, soluții olfactive, arome personalizate, difuzare parfumuri, îmbunătățirea experienței clienților, creșterea brandului, consultanță olfactivă"
         />
-        <link rel="icon" href="/assets/logo/scentio.png" />
+        {/* <link rel="icon" href="/assets/logo/scentio.png" /> */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
