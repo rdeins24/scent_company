@@ -5,25 +5,28 @@ import {
 } from "@heroicons/react/20/solid";
 import Image from "next/image";
 import img from "../public/assets/img/pink.jpg";
-
+import { FaAirFreshener } from "react-icons/fa";
+import { FaRegLaughWink } from "react-icons/fa";
+import { FaUserTie } from "react-icons/fa";
+import { FaEllo } from "react-icons/fa";
 const features = [
   {
     name: "Transformarea Spațiilor",
     description:
       "Misiunea noastră este să transformăm spațiile cotidiene în experiențe olfactive memorabile, oferind soluții inovatoare și personalizate de marketing olfactiv. Prin difuzarea parfumurilor italiene de calitate superioară, ne propunem să îmbogățim mediul înconjurător și să aducem o notă de eleganță și rafinament în viața de zi cu zi.",
-    icon: CloudArrowUpIcon,
+    icon: FaAirFreshener,
   },
   {
     name: "Conexiuni Emoționale",
     description:
       "Ne dedicăm să creăm conexiuni emoționale profunde prin intermediul miresmelor, stimulând simțurile și evocând amintiri plăcute. Fiecare proiect este unic și realizat cu atenție la detalii, pentru a reflecta identitatea și valorile fiecărui client, oferindu-le o experiență senzorială unică și personalizată.",
-    icon: LockClosedIcon,
+    icon: FaEllo,
   },
   {
     name: "Partener de Încredere",
     description:
       "Prin angajamentul nostru de a aduce cele mai fine arome și tehnologii de difuzie de ultimă generație, ne dorim să redefinim modul în care percepem și interacționăm cu mediul înconjurător. Misiunea noastră este să devenim partenerul de încredere pentru afaceri și instituții din întreaga lume, ajutându-le să creeze atmosfere de neuitat și să îmbunătățească experiența clienților lor.",
-    icon: ServerIcon,
+    icon: FaUserTie,
   },
 ];
 
@@ -47,7 +50,7 @@ export default function Example() {
                   <div key={feature.name} className="relative pl-9">
                     <dt className="inline font-semibold text-gray-900">
                       <feature.icon
-                        className="absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                        className="absolute left-1 top-1 h-5 w-5 text-gray-600"
                         aria-hidden="true"
                       />
                       {feature.name}
