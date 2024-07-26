@@ -3,40 +3,22 @@
 @tailwind utilities;
 
 
-body {
-  /* background-image: url('/blue1.jpg'); */
-  /* background-image: url('/blue2.jpg');
-  background-image: url('/blue3.jpg'); */
-  /* background-size: cover;
-  background-repeat: no-repeat; */
-    /* background-color: #0f0d25; */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
 
-  /* background: black; */
-  /* font-family: SF Pro Display, SF Pro Icons, Helvetica, Helvetica Neue, Arial,
-    sans-serif; */
-  line-height: 1.1;
-  letter-spacing: 0em;
-  color: white;
-     /* background-image: linear-gradient(to right top, #3f28de, #252ec8, #0b31b1, #003099, #002e81, #1e2972, #272463, #2b2055, #36194b, #3c1241, #400a36, #41042b); */
-    /* background: linear-gradient(to right, #1F2937, #4A5568); */
-    /* background: linear-gradient(to right, #030742, #041e66); */
-    /* background: rgb(2,0,36); */
-/* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,35,255,1) 100%, rgba(28,0,244,1) 100%); */
-/* background-color: white; */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
 
-/* background-image: radial-gradient(circle, #9b16aa 0%, #127285 100%);
-
-background-color: #FF3CAC;
-background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
-/* background: linear-gradient(90deg, rgb(82, 6, 66) 0%, rgb(48, 6, 233) 100%, rgb(12, 129, 165) 100%); */
-
-
-color: white;
-
-/* background-image: url('/grad.svg');
-background-size: cover;
-background-repeat: no-repeat; */
-/* background-color: black; */
-
-
+@media (max-width: 768px) {
+  .container {
+    padding: 0 0.5rem;
+  }
 }
