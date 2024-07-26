@@ -13,7 +13,7 @@ export default function Layout({ children }) {
       </Head>
       <div>
         <Navbar2 />
-        <main>{children}</main>
+        <div>{children}</div>
         <Footer1 />
       </div>
     </>
