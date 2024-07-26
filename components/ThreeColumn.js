@@ -2,13 +2,13 @@ import Image from "next/image";
 import bottle from "../public/assets/img/bottle.jpg";
 import dif from "../public/assets/img/dif.jpg";
 import scent from "../public/assets/img/scent.jpg";
-import parfume from "../public/assets/img/difm.png";
+// import parfume from "../public/assets/img/difm.png";
 import expert from "../public/expert.jpg";
 
 const callouts = [
   {
     description: "Creează-ți propria fraganță",
-    imageSrc: parfume,
+    imageSrc: scent,
     imageAlt:
       "Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.",
     href: "#",
