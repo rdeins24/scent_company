@@ -9,13 +9,18 @@ import ThreeColumn from "../components/ThreeColumn";
 import Testimonials from "../components/testimonials";
 import FeatureSection from "../components/Main/FeatureSection";
 import MySection from "../components/Main/MySection";
-import InfoSection from '../components/InfoSection'
-import logo from '../public/assets/logo/scentio.png'
+import InfoSection from "../components/InfoSection";
+import logo from "../public/assets/logo/scentio.png";
+import Info from "../components/Main/Info";
+import Gallery from "../components/Main/Gallery";
 const Home = () => {
   return (
     <div>
-     <Head>
-        <title>Scentio Milano - Soluții de Marketing Olfactiv | Parfumuri Ambientale Personalizate</title>
+      <Head>
+        <title>
+          Scentio Milano - Soluții de Marketing Olfactiv | Parfumuri Ambientale
+          Personalizate
+        </title>
         <meta
           name="description"
           content="La Scentio Milano oferim soluții de marketing olfactiv pentru a îmbunătăți experiența clienților și a crește vizibilitatea brandului tău. Descoperă cum aromele ambientale pot transforma spațiul tău comercial, showroom-urile și hotelurile. Oferim consultanță specializată și servicii de difuzare a parfumurilor personalizate pentru afacerea ta."
@@ -29,31 +34,32 @@ const Home = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            "url": "https://www.scentiomilano.com",
-            "logo": "https://www.scentiomilano.com/assets/logo/scentio.png"
+            url: "https://www.scentiomilano.com",
+            logo: "https://www.scentiomilano.com/assets/logo/scentio.png",
           })}
         </script>
       </Head>
 
       <Hero2 />
-      <InfoSection/>
+      <ThreeColumn />
+      <InfoSection />
 
       {/* <MySection /> */}
-
+      <Gallery />
       <Skills />
-      <ThreeColumn />
       {/* <FeatureSection /> */}
-      <ThreeColumn />
+      <Info />
+      {/* <ThreeColumn /> */}
       <Testimonials />
-      <ThreeColumn />
+      {/* <ThreeColumn /> */}
 
       <div className="mx-auto text-center mb-10"></div>
-      <ThreeColumn />
+      {/* <ThreeColumn /> */}
 
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <h2 className="text-center text-lg font-semibold leading-8 text-gray-900">
-            Trusted by the world’s most innovative teams
+            Trusted by the world’s most innovative teams!!!!
           </h2>
           <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
             <img
