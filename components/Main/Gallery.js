@@ -24,6 +24,24 @@ const slides = [
     title: "Rezidentiale",
     description: "Parfumurile au o putere nemaiponendyg iydgi iudh iuhd9u iuhd iudgu o putere nemaiponendyg iydgi iudh iuhd9u iuhd iudg",
   },
+  {
+    image: "/assets/img/dif.jpg",
+    alt: "Descriptive alt text for dif",
+    title: "Showroom-uri",
+    description: "Parfumurile au o putere nemaiponendyg iydgi iudh iuhd9u iuhd iudgu o putere nemaiponendyg iydgi iudh iuhd9u iuhd iudg",
+  },
+  {
+    image: "/assets/img/scent.jpg",
+    alt: "Descriptive alt text for scent",
+    title: "Hotele",
+    description: "Parfumurile au o putere nemaiponendyg iydgi iudh iuhd9u iuhd iudgu o putere nemaiponendyg iydgi iudh iuhd9u iuhd iudg",
+  },
+  {
+    image: "/assets/img/bottle.jpg",
+    alt: "Descriptive alt text for bottle",
+    title: "Rezidentiale",
+    description: "Parfumurile au o putere nemaiponendyg iydgi iudh iuhd9u iuhd iudgu o putere nemaiponendyg iydgi iudh iuhd9u iuhd iudg",
+  },
 ];
 
 export default function App() {
@@ -35,12 +53,12 @@ export default function App() {
           spaceBetween: 10,
         },
         768: {
-          slidesPerView: 2,
+          slidesPerView: 3,
           spaceBetween: 15,
         },
         1024: {
           slidesPerView: 3,
-          spaceBetween: 20,
+          spaceBetween: 15,
         },
       }}
       centeredSlides={true}

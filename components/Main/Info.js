@@ -3,7 +3,7 @@ import brand from "../../public/brand.jpg";
 
 export default function ExampleComponent() {
   return (
-    <div className="flex flex-col sm:flex-row items-center justify-center bg-gray-50 py-10 px-4 sm:px-8 lg:px-16 gap-4 h-full">
+    <div className="flex flex-col sm:flex-row items-center justify-center bg-gray-50 py-10 px-4 sm:px-8 lg:px-16 gap-4 h-full my-11">
       <div className="w-full  sm:w-1/2 lg:w-1/2">
         <Image
           src={brand}

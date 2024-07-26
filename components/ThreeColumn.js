@@ -2,12 +2,13 @@ import Image from "next/image";
 import bottle from "../public/assets/img/bottle.jpg";
 import dif from "../public/assets/img/dif.jpg";
 import scent from "../public/assets/img/scent.jpg";
+import parfume from "../public/assets/img/difm.png";
 import expert from "../public/expert.jpg";
 
 const callouts = [
   {
     description: "Creează-ți propria fraganță",
-    imageSrc: bottle,
+    imageSrc: parfume,
     imageAlt:
       "Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.",
     href: "#",
@@ -29,9 +30,9 @@ const callouts = [
 
 export default function Example() {
   return (
-    <div className="bg-gray-100">
-      <div className="mx-auto max-w-9xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
+    <div className="">
+      <div className="mx-auto  px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl  lg:max-w-none lg:py-32">
           {/* <h2 className="text-2xl font-bold text-gray-900">Collections</h2> */}
 
           <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
