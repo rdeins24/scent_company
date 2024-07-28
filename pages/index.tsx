@@ -19,7 +19,7 @@ const Home = () => {
     <div>
       <Head>
         <title>
-          Scentio Milano - Soluții de Marketing Olfactiv | Parfumuri Ambientale
+          Scentio Milano|Soluții Marketing Olfactiv | Aroma Marketing Parfumuri Ambientale
           Personalizate
         </title>
         <meta
