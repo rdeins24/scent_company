@@ -28,7 +28,7 @@ const Home = () => {
         />
         <meta
           name="keywords"
-          content="marketing olfactiv, parfumuri ambientale, Scentio Milano, soluții olfactive, arome personalizate, difuzare parfumuri, îmbunătățirea experienței clienților, creșterea brandului, consultanță olfactivă"
+          content="marketing olfactiv, parfumuri ambientale, aroma marketing Scentio Milano, soluții olfactive, arome personalizate, difuzare parfumuri, îmbunătățirea experienței clienților, creșterea brandului, consultanță olfactivă"
         />
         <script type="application/ld+json">
           {JSON.stringify({
