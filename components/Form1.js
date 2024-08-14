@@ -7,24 +7,23 @@ const getInitialValues = () => ({
   lastName: "",
   email: "",
   companyName: "",
-  country: "",
   message: "",
 });
 
 export const SuggestFeature = () => {
   const submitHandler = async (values, actions) => {
     actions.resetForm(getInitialValues());
-    // Replace the endpoint below with your desired form submission logic
+
+    // Zoho Form Submission Endpoint
     try {
       const response = await fetch(
-        "https://formsubmit.co/ajax/rdenis24@yahoo.com",
+        "https://forms.zohopublic.com/rd17/form/websiteform/formperma/nuccSj6Lpm3_WIHHNZz-Z3eGBFaDYn3WnafI-73uC4U", // replace with your actual Zoho form endpoint
         {
           method: "POST",
           headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
+            "Content-Type": "application/x-www-form-urlencoded",
           },
-          body: JSON.stringify(values),
+          body: new URLSearchParams(values).toString(), // Converts form data into x-www-form-urlencoded format
         }
       );
       if (response.ok) {
@@ -75,7 +74,7 @@ export const SuggestFeature = () => {
             className="border p-2 rounded w-full text-black"
           />
           <div className="flex justify-center pt-[100px]">
-            <Button content="Trimite" />
+            <Button content="Trimite" type="submit"/>
           </div>
         </Form>
       </Formik>

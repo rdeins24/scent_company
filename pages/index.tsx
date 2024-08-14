@@ -19,12 +19,12 @@ const Home = () => {
     <div>
       <Head>
         <title>
-          Scentio Milano|Soluții Marketing Olfactiv | Aroma Marketing Parfumuri Ambientale
+          Scentio Milano | Soluții Marketing Olfactiv | Aroma Marketing Parfumuri Ambientale
           Personalizate
         </title>
         <meta
           name="description"
-          content="La Scentio Milano oferim soluții de marketing olfactiv pentru a îmbunătăți experiența clienților și a crește vizibilitatea brandului tău. Descoperă cum aromele ambientale pot transforma spațiul tău comercial, showroom-urile și hotelurile. Oferim consultanță specializată și servicii de difuzare a parfumurilor personalizate pentru afacerea ta."
+          content="La Scentio Milano oferim soluții de marketing olfactiv,aroma marketing pentru a îmbunătăți experiența clienților și a crește vizibilitatea brandului tău. Descoperă cum aromele ambientale pot transforma spațiul tău comercial, showroom-urile și hotelurile. Oferim consultanță specializată și servicii de difuzare a parfumurilor personalizate pentru afacerea ta."
         />
         <meta
           name="keywords"
