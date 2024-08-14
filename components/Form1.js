@@ -38,7 +38,7 @@ export const SuggestFeature = () => {
 
   return (
     <div className="md:max-w-xl mx-auto pb-[80px] max-w-xs">
-      <h1 className="text-2xl font-bold mb-4">Scrie-ne</h1>
+      <h1 className="text-2xl font-bold mb-4">Scrie-ne!</h1>
       <Formik onSubmit={submitHandler} initialValues={getInitialValues()}>
         <Form className="space-y-4">
           <Field
