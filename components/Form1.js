@@ -7,6 +7,7 @@ const getInitialValues = () => ({
   lastName: "",
   email: "",
   companyName: "",
+  phone: "",
   message: "",
 });
 
@@ -17,13 +18,13 @@ export const SuggestFeature = () => {
     // Zoho Form Submission Endpoint
     try {
       const response = await fetch(
-        "https://forms.zohopublic.com/rd17/form/websiteform/formperma/nuccSj6Lpm3_WIHHNZz-Z3eGBFaDYn3WnafI-73uC4U", // replace with your actual Zoho form endpoint
+        "https://forms.zohopublic.com/rd17/form/websiteform/formperma/nuccSj6Lpm3_WIHHNZz-Z3eGBFaDYn3WnafI-73uC4U",
         {
           method: "POST",
           headers: {
             "Content-Type": "application/x-www-form-urlencoded",
           },
-          body: new URLSearchParams(values).toString(), // Converts form data into x-www-form-urlencoded format
+          body: new URLSearchParams(values).toString(),
         }
       );
       if (response.ok) {
@@ -60,6 +61,12 @@ export const SuggestFeature = () => {
             className="border p-2 rounded w-full text-black"
           />
           <Field
+            placeholder="Phone"
+            name="phone"
+            type="tel"
+            className="border p-2 rounded w-full text-black"
+          />
+          <Field
             placeholder="Company"
             name="companyName"
             type="text"
@@ -74,7 +81,7 @@ export const SuggestFeature = () => {
             className="border p-2 rounded w-full text-black"
           />
           <div className="flex justify-center pt-[100px]">
-            <Button content="Trimite" type="submit"/>
+            <Button content="Trimite" type="submit" />
           </div>
         </Form>
       </Formik>
