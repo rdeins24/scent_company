@@ -4,6 +4,7 @@ import ContactDetails from "../components/ContactDetails";
 import ContactSection from "../components/ContactSection";
 import Form from "../components/Form1";
 import Head from "next/head";
+import InfoBlock from '../components/InfoBlock'
 
 const contact = () => {
   return (
@@ -21,7 +22,12 @@ const contact = () => {
       </Head>
 
       <ContactDetails />
-
+      <InfoBlock 
+  bgColor="bg-[#0d0e11]" 
+  textColor="text-white" 
+  buttonBgColor="bg-white" 
+  buttonTextColor="text-black" 
+/>
       {/* <Form /> */}
       <ContactSection />
     </div>

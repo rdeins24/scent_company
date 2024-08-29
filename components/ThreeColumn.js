@@ -31,9 +31,9 @@ const callouts = [
 export default function Example() {
   return (
     <div className="">
-      <div className="mx-auto  px-4 sm:px-6 lg:px-8">
+      <div className=" px-4 sm:px-6 lg:px-8 mx-auto max-w-7xl">
         <div className="mx-auto max-w-2xl  lg:max-w-none lg:py-32">
-          {/* <h2 className="text-2xl font-bold text-gray-900">Collections</h2> */}
+          <h2 className="text-2xl font-bold text-gray-900">Collections</h2>
 
           <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
             {callouts.map((callout) => (
@@ -53,6 +53,9 @@ export default function Example() {
                 </h3>
                 <p className="font-bold text-gray-900 text-2xl text-center align-middle">
                   {callout.description}
+                </p>
+                <p className="font-bold text-gray-400 text-sm text-center align-middle">
+                  {callout.imageAlt}
                 </p>
               </div>
             ))}

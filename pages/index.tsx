@@ -12,11 +12,15 @@ import Info from "../components/Main/Info";
 import Gallery from "../components/Main/Gallery";
 import Link from "next/link";
 import applications from "../data/applicationsData";
-import services from "../data/servicesData";
+// import services from "../data/servicesData";
+import Works from "../components/works";
+import InfoBlock from '../components/InfoBlock'
+import AnimatedComponent from '../components/AnimatedComponent'
+import Services from "../components/services";
 
 const Home = () => {
   return (
-    <div>
+    <div className="">
       <Head>
         <title>
           Scentio Milano | Soluții Marketing Olfactiv | Aroma Marketing Parfumuri Ambientale
@@ -41,7 +45,15 @@ const Home = () => {
       </Head>
 
       <Hero2 />
-      <ThreeColumn />
+      <Services/>
+      {/* <AnimatedComponent/> */}
+      {/* <ThreeColumn /> */}
+      <div className="container">
+
+      </div>
+      <Gallery />
+    
+      <InfoBlock  bgColor="bg-white"/>
       <InfoSection />
 
       {/* <div className="container mx-auto py-12 px-4 space-y-12">
@@ -67,13 +79,18 @@ const Home = () => {
       </div> */}
 
       <div className="container">
-        <Gallery />
+   
         <Skills />
       </div>
+        {/* <Works/> */}
       <div className="bg-gray-50">
-        <Info />
+      <InfoBlock  />
       </div>
+    
+
+
       <Testimonials />
+        <Info />
       <Blog />
     </div>
   );

@@ -16,6 +16,7 @@
     "embla-carousel-class-names": "^6.2.0",
     "embla-carousel-react": "^6.2.0",
     "formik": "^2.4.5",
+    "gsap": "^3.12.5",
     "next": "^14.2.5",
     "next-sitemap": "^4.2.3",
     "node-sass": "^9.0.0",
