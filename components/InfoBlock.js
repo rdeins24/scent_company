@@ -1,5 +1,6 @@
 import Image from "next/image";
 import img from "../public/bawl.webp";
+import Link from "next/link";
 
 const InfoBlock = ({
   bgColor = "bg-black",
@@ -28,11 +29,15 @@ const InfoBlock = ({
           Marketingul olfactiv te poate ajuta să creezi experiențe pozitive,
           captivante și unice. Solicită o demonstrație.
         </p>
+        <Link href={'/Contact'}>
+        
+        
         <button
-          className={`px-6 py-3 rounded-lg border-white transition-colors ${buttonBgColor} ${buttonTextColor} hover:bg-gray-800`}
-        >
+          className={`px-6 py-2 border border-white text-white hover:bg-white hover:text-black transition-all`}
+          >
           Contacteaza-ne
         </button>
+          </Link>
         <p className="mt-10">
           Experiența noastră ne permite să creăm arome personalizate care să
           răspundă nevoilor fiecărui business. Solicită un test gratuit de

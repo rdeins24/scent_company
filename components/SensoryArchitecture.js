@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const SensoryArchitecture = () => {
   const steps = [
@@ -35,19 +36,26 @@ const SensoryArchitecture = () => {
   ];
 
   return (
-    <div className="bg-black text-gray-200 py-16 ">
+    <div className="bg-black text-gray-200 py-16">
       <h2 className="text-center text-xl font-bold mb-12 text-[#d0d0d0]">ARHITECTURĂ OLFACIVĂ</h2>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         {steps.map((step) => (
-          <div key={step.id} className="flex items-start space-x-4">
-            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#333333] inline-flex items-center justify-center text-[#b3b3b3] xt-white relative z-10">
+          <motion.div
+            key={step.id}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: step.id * 0.1 }}
+            viewport={{ once: true }}
+            className="flex items-start space-x-4"
+          >
+            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#333333] inline-flex items-center justify-center text-[#b3b3b3] text-white relative z-10">
               {step.id}
             </div>
             <div>
               <h3 className="text-xl font-semibold mb-3 text-[#d0d0d0]">{step.title}</h3>
-              <p className="text-[#707070]  ">{step.description}</p>
+              <p className="text-[#707070]">{step.description}</p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
@@ -55,3 +63,5 @@ const SensoryArchitecture = () => {
 };
 
 export default SensoryArchitecture;
+
+

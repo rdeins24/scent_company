@@ -54,39 +54,16 @@ const Home = () => {
       />
       <InfoBlock />
       <SensoryArchitecture />
-      {/* <Discover
-       title="Creăm experiențe senzoriale unice"
-       description="Suntem lideri în aromatizarea spațiilor. Ne remarcăm prin calitatea superioară a gamei noastre de arome și prin angajamentul nostru față de inovație și tehnologie. Dezvoltăm și patentăm propriile echipamente pentru a oferi experiențe senzoriale inedite și memorabile."
-       buttonText="Descoperă"
-       onButtonClick={() => alert('Button clicked!')}
-      /> */}
+
       <Services />
       {/* <AnimatedComponent/> */}
       {/* <ThreeColumn /> */}
       <div className="container"></div>
       <Gallery />
-      {/* <InfoBlock  bgColor="bg-white"/> */}
       <InfoSection />
-      {/* <div className="container mx-auto py-12 px-4 space-y-12">
-        {services.map((service) => (
-          <Link key={service.id} href={`/services/${service.id}`} legacyBehavior>
-            <a className="block p-4 border border-gray-300 rounded-lg hover:bg-gray-50">
-              <h2 className="text-xl font-bold">{service.name}</h2>
-              <p>{service.description}</p>
-            </a>
-          </Link>
-        ))}
-      </div> */}
-      {/* <div className="container mx-auto py-12 px-4 space-y-12">
-        {applications.map((application) => (
-          <Link key={application.id} href={`/applications/${application.id}`} legacyBehavior>
-            <a className="block p-4 border border-gray-300 rounded-lg hover:bg-gray-50">
-              <h2 className="text-xl font-bold">{application.name}</h2>
-              <p>{application.description}</p>
-            </a>
-          </Link>
-        ))}
-      </div> */}
+      {/* <InfoBlock  bgColor="bg-white"/> */}
+
+   
       <div className="container"></div>
       <Skills />
       {/* <Works/> */}
