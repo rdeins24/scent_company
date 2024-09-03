@@ -1,11 +1,10 @@
 import React, { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { motion } from "framer-motion";
 import img from "../../public/assets/img/building.jpg";
-import img2 from "../../public/assets/img/dif.jpg";
 import img3 from "../../public/assets/slider/blur.jpg";
 import img4 from "../../public/assets/slider/close.jpg";
-import img7 from "../../public/assets/slider/sunlight.jpg";
 import img8 from "../../public/assets/slider/vertical.jpg";
 import img9 from "../../public/assets/slider/vivid.jpg";
 
@@ -47,19 +46,32 @@ const CustomSlider = () => {
       }
     };
   }, []);
+
+  const slideVariants = {
+    hidden: { opacity: 0, y: 70 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <div className="bg-black md:py-40 pb-[90px] relative">
       {/* Content Section */}
       <div className="flex flex-col md:flex-row">
         {/* Static Text Block */}
-        <div className="w-full md:w-[30%]  bg-black px-10 p-10">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={slideVariants}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+          className="w-full md:w-[30%]  bg-black px-10 p-10"
+        >
           <h2 className="text-xl font-bold">Definition of an Odotype</h2>
           <p className="md:mt-4">
             An odotype is a unique scent that identifies a brand or
             establishment. We have a unique method to create the perfect
             odotype...
           </p>
-        </div>
+        </motion.div>
 
         {/* Custom Slider */}
         <div className="w-full md:w-[70%] shadow-2xl">
@@ -68,117 +80,65 @@ const CustomSlider = () => {
             className="flex space-x-2 overflow-hidden scroll-smooth touch-pan-x"
             style={{ scrollSnapType: "x mandatory" }}
           >
-            <div className="relative w-full md:w-[30%] shrink-0 md:h-[600px]">
-              <Image
-                src={img}
-                alt="Slide 1"
-                className="object-cover w-full h-60 md:h-full opacity-70"
-              />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <p className=" text-sm  text-white font-semibold m-10 md:text-left md:bottom-0 md:mb-4">
-                  1An odotype is a unique scent that identifies a brand or
-                  establishment. We have a unique method to create the perfect
-                  odotype...
-                </p>
-              </div>
-            </div>
-
-            <div className="relative w-full md:w-[30%] shrink-0 md:h-[600px]">
-              <Image
-                src={img3}
-                alt="Slide 3"
-                className="object-cover w-full h-60 md:h-full opacity-70"
-              />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <p className="text-white text-sm font-semibold m-10 md:text-left md:bottom-0 md:mb-4">
-                  2An odotype is a unique scent that identifies a brand or
-                  establishment. We have a unique method to create the perfect
-                  odotype...
-                </p>
-              </div>
-            </div>
-
-            <div className="relative w-full md:w-[30%] shrink-0 md:h-[600px]">
-              <Image
-                src={img4}
-                alt="Slide 4"
-                className="object-cover w-full h-60 md:h-full opacity-70"
-              />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <p className="text-white text-sm font-semibold m-10 md:text-left md:bottom-0 md:mb-4">
-                  3An odotype is a unique scent that identifies a brand or
-                  establishment. We have a unique method to create the perfect
-                  odotype...
-                </p>
-              </div>
-            </div>
-
-            <div className="relative w-full md:w-[30%] shrink-0 md:h-[600px]">
-              <Image
-                src={img8}
-                alt="Slide 4"
-                className="object-cover w-full h-60 md:h-full opacity-70"
-              />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <p className="text-white text-sm font-semibold m-10 md:text-left md:bottom-0 md:mb-4">
-                  An odotype is a unique scent that identifies a brand or
-                  establishment. We have a unique method to create the perfect
-                  odotype...
-                </p>
-              </div>
-            </div>
-
-            <div className="relative w-full md:w-[30%] shrink-0 md:h-[600px]">
-              <Image
-                src={img9}
-                alt="Slide 4"
-                className="object-cover w-full h-60 md:h-full opacity-70"
-              />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <p className="text-white text-sm font-semibold m-10 md:text-left md:bottom-0 md:mb-4">
-                  An odotype is a unique scent that identifies a brand or
-                  establishment. We have a unique method to create the perfect
-                  odotype...
-                </p>
-              </div>
-            </div>
+            {[img, img3, img4, img8, img9].map((image, index) => (
+              <motion.div
+                key={index}
+                initial="hidden"
+                whileInView="visible"
+                variants={slideVariants}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="relative w-full md:w-[30%] shrink-0 md:h-[600px]"
+              >
+                <Image
+                  src={image}
+                  alt={`Slide ${index + 1}`}
+                  className="object-cover w-full h-60 md:h-full opacity-70"
+                />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <p className="text-white text-sm font-semibold m-10 md:text-left md:bottom-0 md:mb-4">
+                    {index + 1}An odotype is a unique scent that identifies a brand or
+                    establishment. We have a unique method to create the perfect
+                    odotype...
+                  </p>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </div>
 
       {/* Navigation Buttons */}
       <div className="flex justify-center mt-4 md:mt-0 space-x-4 z-10 md:absolute md:top-[50px] md:right-[150px]">
-      <button
-  onClick={handlePrev}
-  className={`p-3 rounded-full transition-all ${
-    disablePrev
-      ? "bg-gray-400"
-      : "bg-black hover:bg-white hover:text-black group"
-  }`}
->
-  <FaArrowLeft
-    className={`${
-      disablePrev ? "text-gray-700" : "text-white group-hover:text-black"
-    }`}
-  />
-</button>
-<button
-  onClick={handleNext}
-  className={`p-3 rounded-full transition-all ${
-    disableNext
-      ? "bg-gray-400"
-      : "bg-black hover:bg-white hover:text-black group"
-  }`}
->
-  <FaArrowRight
-    className={`${
-      disableNext ? "text-gray-700" : "text-white group-hover:text-black"
-    }`}
-  />
-</button>
-
-</div>
-
+        <button
+          onClick={handlePrev}
+          className={`p-3 rounded-full transition-all ${
+            disablePrev
+              ? "bg-gray-400"
+              : "bg-black hover:bg-white hover:text-black group"
+          }`}
+        >
+          <FaArrowLeft
+            className={`${
+              disablePrev ? "text-gray-700" : "text-white group-hover:text-black"
+            }`}
+          />
+        </button>
+        <button
+          onClick={handleNext}
+          className={`p-3 rounded-full transition-all ${
+            disableNext
+              ? "bg-gray-400"
+              : "bg-black hover:bg-white hover:text-black group"
+          }`}
+        >
+          <FaArrowRight
+            className={`${
+              disableNext ? "text-gray-700" : "text-white group-hover:text-black"
+            }`}
+          />
+        </button>
+      </div>
     </div>
   );
 };
