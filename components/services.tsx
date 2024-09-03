@@ -14,7 +14,7 @@ const Skills: React.FC = () => {
   const refContainer = useRef<HTMLDivElement>(null);
   const [activeService, setActiveService] = useState(0);
 
-  const numOfPages = 5;
+  const numOfPages = 6;
 
   let progress = 0;
   const { current: elContainer } = refContainer;
@@ -27,7 +27,7 @@ const Skills: React.FC = () => {
         clientHeight + halfH,
         Math.max(-screenH, scrollY - offsetTop) + halfH
       ) / clientHeight;
-    progress = Math.min(numOfPages - 0.5, Math.max(0.5, percentY * numOfPages));
+    progress = Math.min(numOfPages - 0.6, Math.max(0.6, percentY * numOfPages));
   }
 
   useEffect(() => {
@@ -54,22 +54,82 @@ const Skills: React.FC = () => {
     >
       <div className="min-h-screen max-w-5xl mx-auto px-10 lg:px-20 py-24 md:py-28 lg:py-36 flex flex-col justify-center items-center text-4xl md:text-6xl lg:text-6xl tracking-tight font-semibold text-black">
         <div className="leading-[1.25] space-y-20">
-          {["Hotels", "Restaurants", "Automotive", "Showroom", "Retail"].map(
-            (service, index) => (
-              <Link href={`/services/${service.toLowerCase()}`} key={index}>
-                <div
-                  className={`${s.skillText} cursor-pointer my-10 transition-all duration-300 ${
-                    activeService === index ? "font-bold " : ""
-                  }`}
-                  style={{
-                    opacity: opacityForBlock(progress, index),
-                  }}
-                >
-                  {service}
-                </div>
-              </Link>
-            )
-          )}
+          <Link href="/hotele">
+            <div
+              className={`${s.skillText} cursor-pointer my-10 transition-all duration-300 ${
+                activeService === 0 ? "font-bold " : ""
+              }`}
+              style={{
+                opacity: opacityForBlock(progress, 0),
+              }}
+            >
+              Hotels
+            </div>
+          </Link>
+
+          <Link href="/restaurante">
+            <div
+              className={`${s.skillText} cursor-pointer my-10 transition-all duration-300 ${
+                activeService === 1 ? "font-bold " : ""
+              }`}
+              style={{
+                opacity: opacityForBlock(progress, 1),
+              }}
+            >
+              Restaurante
+            </div>
+          </Link>
+
+          <Link href="/automotive">
+            <div
+              className={`${s.skillText} cursor-pointer my-10 transition-all duration-300 ${
+                activeService === 2 ? "font-bold " : ""
+              }`}
+              style={{
+                opacity: opacityForBlock(progress, 2),
+              }}
+            >
+              Automotive
+            </div>
+          </Link>
+
+          <Link href="/showroom">
+            <div
+              className={`${s.skillText} cursor-pointer my-10 transition-all duration-300 ${
+                activeService === 3 ? "font-bold " : ""
+              }`}
+              style={{
+                opacity: opacityForBlock(progress, 3),
+              }}
+            >
+              Showroom
+            </div>
+          </Link>
+
+          <Link href="/retail">
+            <div
+              className={`${s.skillText} cursor-pointer my-10 transition-all duration-300 ${
+                activeService === 4 ? "font-bold " : ""
+              }`}
+              style={{
+                opacity: opacityForBlock(progress, 4),
+              }}
+            >
+              Retail
+            </div>
+          </Link>
+          <Link href="/gym">
+            <div
+              className={`${s.skillText} cursor-pointer my-10 transition-all duration-300 ${
+                activeService === 5 ? "font-bold " : ""
+              }`}
+              style={{
+                opacity: opacityForBlock(progress, 5),
+              }}
+            >
+           Sala Fitnes
+            </div>
+          </Link>
         </div>
       </div>
     </div>

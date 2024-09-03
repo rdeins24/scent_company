@@ -36,16 +36,23 @@ const CustomSlider = () => {
 
   useEffect(() => {
     checkButtons();
-    sliderRef.current.addEventListener("scroll", checkButtons);
-    return () => sliderRef.current.removeEventListener("scroll", checkButtons);
+    const slider = sliderRef.current;
+    if (slider) {
+      slider.addEventListener("scroll", checkButtons);
+    }
+  
+    return () => {
+      if (slider) {
+        slider.removeEventListener("scroll", checkButtons);
+      }
+    };
   }, []);
-
   return (
     <div className="bg-black md:py-40 pb-[90px] relative">
       {/* Content Section */}
       <div className="flex flex-col md:flex-row">
         {/* Static Text Block */}
-        <div className="w-full md:w-[30%] text-white bg-black px-10 p-10">
+        <div className="w-full md:w-[30%]  bg-black px-10 p-10">
           <h2 className="text-xl font-bold">Definition of an Odotype</h2>
           <p className="md:mt-4">
             An odotype is a unique scent that identifies a brand or
@@ -68,11 +75,11 @@ const CustomSlider = () => {
                 className="object-cover w-full h-60 md:h-full opacity-70"
               />
               <div className="absolute inset-0 flex items-center justify-center">
-                <h2 className="text-white text-sm font-semibold m-10 md:text-left md:bottom-0 md:mb-4">
+                <p className=" text-sm  text-white font-semibold m-10 md:text-left md:bottom-0 md:mb-4">
                   1An odotype is a unique scent that identifies a brand or
                   establishment. We have a unique method to create the perfect
                   odotype...
-                </h2>
+                </p>
               </div>
             </div>
 
@@ -83,11 +90,11 @@ const CustomSlider = () => {
                 className="object-cover w-full h-60 md:h-full opacity-70"
               />
               <div className="absolute inset-0 flex items-center justify-center">
-                <h2 className="text-white text-sm font-semibold m-10 md:text-left md:bottom-0 md:mb-4">
+                <p className="text-white text-sm font-semibold m-10 md:text-left md:bottom-0 md:mb-4">
                   2An odotype is a unique scent that identifies a brand or
                   establishment. We have a unique method to create the perfect
                   odotype...
-                </h2>
+                </p>
               </div>
             </div>
 
@@ -98,11 +105,11 @@ const CustomSlider = () => {
                 className="object-cover w-full h-60 md:h-full opacity-70"
               />
               <div className="absolute inset-0 flex items-center justify-center">
-                <h2 className="text-white text-sm font-semibold m-10 md:text-left md:bottom-0 md:mb-4">
+                <p className="text-white text-sm font-semibold m-10 md:text-left md:bottom-0 md:mb-4">
                   3An odotype is a unique scent that identifies a brand or
                   establishment. We have a unique method to create the perfect
                   odotype...
-                </h2>
+                </p>
               </div>
             </div>
 
@@ -113,11 +120,11 @@ const CustomSlider = () => {
                 className="object-cover w-full h-60 md:h-full opacity-70"
               />
               <div className="absolute inset-0 flex items-center justify-center">
-                <h2 className="text-white text-sm font-semibold m-10 md:text-left md:bottom-0 md:mb-4">
+                <p className="text-white text-sm font-semibold m-10 md:text-left md:bottom-0 md:mb-4">
                   An odotype is a unique scent that identifies a brand or
                   establishment. We have a unique method to create the perfect
                   odotype...
-                </h2>
+                </p>
               </div>
             </div>
 
@@ -128,11 +135,11 @@ const CustomSlider = () => {
                 className="object-cover w-full h-60 md:h-full opacity-70"
               />
               <div className="absolute inset-0 flex items-center justify-center">
-                <h2 className="text-white text-sm font-semibold m-10 md:text-left md:bottom-0 md:mb-4">
+                <p className="text-white text-sm font-semibold m-10 md:text-left md:bottom-0 md:mb-4">
                   An odotype is a unique scent that identifies a brand or
                   establishment. We have a unique method to create the perfect
                   odotype...
-                </h2>
+                </p>
               </div>
             </div>
           </div>
@@ -141,35 +148,37 @@ const CustomSlider = () => {
 
       {/* Navigation Buttons */}
       <div className="flex justify-center mt-4 md:mt-0 space-x-4 z-10 md:absolute md:top-[50px] md:right-[150px]">
-        <button
-          onClick={handlePrev}
-          className={`p-3 rounded-full transition-all ${
-            disablePrev
-              ? "bg-gray-400"
-              : "bg-black hover:bg-white hover:text-black"
-          }`}
-        >
-          <FaArrowLeft
-            className={`${
-              disablePrev ? "text-gray-700" : "text-white hover:text-black"
-            }`}
-          />
-        </button>
-        <button
-          onClick={handleNext}
-          className={`p-3 rounded-full transition-all ${
-            disableNext
-              ? "bg-gray-400"
-              : "bg-black hover:bg-white hover:text-black"
-          }`}
-        >
-          <FaArrowRight
-            className={`${
-              disableNext ? "text-gray-700" : "text-white hover:text-black"
-            }`}
-          />
-        </button>
-      </div>
+      <button
+  onClick={handlePrev}
+  className={`p-3 rounded-full transition-all ${
+    disablePrev
+      ? "bg-gray-400"
+      : "bg-black hover:bg-white hover:text-black group"
+  }`}
+>
+  <FaArrowLeft
+    className={`${
+      disablePrev ? "text-gray-700" : "text-white group-hover:text-black"
+    }`}
+  />
+</button>
+<button
+  onClick={handleNext}
+  className={`p-3 rounded-full transition-all ${
+    disableNext
+      ? "bg-gray-400"
+      : "bg-black hover:bg-white hover:text-black group"
+  }`}
+>
+  <FaArrowRight
+    className={`${
+      disableNext ? "text-gray-700" : "text-white group-hover:text-black"
+    }`}
+  />
+</button>
+
+</div>
+
     </div>
   );
 };

@@ -5,6 +5,8 @@ import ContactSection from "../components/ContactSection";
 import Form from "../components/Form1";
 import Head from "next/head";
 import InfoBlock from '../components/InfoBlock'
+import Discover from '../components/Templates/Discover'
+
 
 const contact = () => {
   return (
@@ -21,7 +23,13 @@ const contact = () => {
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
 
-      <ContactDetails />
+      {/* <Discover
+       title="Creăm experiențe senzoriale unice"
+       description="Suntem lideri în aromatizarea spațiilor. Ne remarcăm prin calitatea superioară a gamei noastre de arome și prin angajamentul nostru față de inovație și tehnologie. Dezvoltăm și patentăm propriile echipamente pentru a oferi experiențe senzoriale inedite și memorabile."
+       buttonText="Descoperă"
+       onButtonClick={() => alert('Button clicked!')}
+       /> */}
+       <ContactDetails />
       <InfoBlock 
   bgColor="bg-[#0d0e11]" 
   textColor="text-white" 

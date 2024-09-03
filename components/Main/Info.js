@@ -3,7 +3,7 @@ import brand from "../../public/brand.jpg";
 
 export default function ExampleComponent() {
   return (
-    <div className="flex flex-col  sm:flex-row items-center justify-center bg-gray-50 py-10 px-4 sm:px-8 lg:px-16 gap-4 h-full my-11">
+    <div className="flex flex-col  sm:flex-row items-center justify-center  py-10 px-4 sm:px-8 lg:px-16 gap-4 h-full my-11">
       <div className="w-full sm:w-1/2 lg:w-1/2">
         <Image
           src={brand}
@@ -12,13 +12,13 @@ export default function ExampleComponent() {
         />
       </div>
       <div className="mt-4 sm:mt-0 sm:ml-6 w-full sm:w-1/2">
-        <h2 className="text-xl sm:text-4xl text-gray-900 font-bold my-4">
+        <h2 className="text-xl sm:text-4xl font-bold my-4">
           FASCINAȚIA UNEI FRAGANȚE
         </h2>
-        <h3 className="text-lg sm:text-3xl text-gray-600">
+        <h3 className="text-lg sm:text-3xl ">
           pentru a-ți crea identitatea
         </h3>
-        <p className="my-6 sm:my-10 text-gray-400 text-sm sm:text-lg leading-6">
+        <p className="my-6 sm:my-10  text-sm sm:text-lg leading-6">
           Forța persuasivă a unei esențe deschide porțile către universuri
           ascunse, pline de senzații inconștiente, dorințe și amintiri
           învăluitoare. Crearea unui logo olfactiv dezvăluie identitatea
@@ -29,24 +29,24 @@ export default function ExampleComponent() {
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
           <div>
-            <h3 className="text-lg sm:text-2xl font-semibold text-gray-900">
+            <h3 className="text-lg sm:text-2xl font-semibold ">
               SURPRINDE
             </h3>
-            <p className="text-gray-700 my-2 text-sm sm:text-lg">
+            <p className=" my-2 text-sm sm:text-lg">
               cu experiențe multi-senzoriale
             </p>
           </div>
           <div>
-            <h3 className="text-lg sm:text-2xl font-semibold text-gray-900">
+            <h3 className="text-lg sm:text-2xl font-semibold ">
               EVOCĂ
             </h3>
-            <p className="text-gray-700 my-2 text-sm sm:text-lg">stări și acțiuni</p>
+            <p className=" my-2 text-sm sm:text-lg">stări și acțiuni</p>
           </div>
           <div>
-            <h3 className="text-lg sm:text-2xl font-semibold text-gray-900">
+            <h3 className="text-lg sm:text-2xl font-semibold ">
               CONSTRUIEȘTE
             </h3>
-            <p className="text-gray-700 my-2 text-sm sm:text-lg">conexiuni profunde</p>
+            <p className=" my-2 text-sm sm:text-lg">conexiuni profunde</p>
           </div>
         </div>
       </div>

@@ -2,8 +2,8 @@ import Image from "next/image";
 import img from "../public/bawl.webp";
 
 const InfoBlock = ({
-  bgColor = "bg-gray-50",
-  textColor = "text-gray-700",
+  bgColor = "bg-black",
+  textColor = "text-white",
   buttonBgColor = "bg-black",
   buttonTextColor = "text-white",
 }) => {
@@ -29,7 +29,7 @@ const InfoBlock = ({
           captivante și unice. Solicită o demonstrație.
         </p>
         <button
-          className={`px-6 py-3 rounded-lg transition-colors ${buttonBgColor} ${buttonTextColor} hover:bg-gray-800`}
+          className={`px-6 py-3 rounded-lg border-white transition-colors ${buttonBgColor} ${buttonTextColor} hover:bg-gray-800`}
         >
           Contacteaza-ne
         </button>

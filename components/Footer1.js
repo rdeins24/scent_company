@@ -36,31 +36,31 @@ function Footer1() {
           <div className="relative">
             <div className="bg-red p-3 space-y-10 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-[200px]">
               <div className="md:ml-24 md:mt-9">
-                <h1 className="bg-gradient-to-r from-pink-500 via-red-500 to-orange-500 bg-clip-text text-transparent text-xl font-medium">
+                <h1 className="text-[#d0d0d0] text-xl font-medium">
                   {contactInfo.title}
                 </h1>
-                <p className="text-gray-500 font-medium text-base hover:text-blue-600">
+                <p className="text-[#707070] font-medium text-base hover:text-white">
                   {contactInfo.address}
                 </p>
                 <a
                   href={`tel:${contactInfo.phone}`}
-                  className="text-gray-500 font-medium text-base hover:text-blue-600 block py-2"
+                  className="text-[#707070] text-base hover:text-blue-600 block py-2"
                 >
-                  <strong className="text-blue-600">Phone:</strong> {contactInfo.phone}
+                  <strong className="text-[#d0d0d0]">Phone:</strong> {contactInfo.phone}
                 </a>
                 <a
                   href={`mailto:${contactInfo.email}`}
-                  className="text-gray-500 font-medium text-base hover:text-blue-600 block py-2"
+                  className="text-[#707070] font-medium text-base hover:text-blue-600 block py-2"
                 >
-                  <strong className="text-blue-600">Email:</strong> {contactInfo.email}
+                  <strong className="text-[#d0d0d0]">Email:</strong> {contactInfo.email}
                 </a>
               </div>
 
               <div className="leading-9 md:w-2/4 md:ml-24">
-                <h1 className="bg-gradient-to-r from-pink-500 via-red-500 to-orange-500 bg-clip-text text-transparent text-xl font-medium">
+                <h1 className="text-[#d0d0d0]  text-transparent text-xl font-medium">
                   Useful Links
                 </h1>
-                <ul className="mt-2 text-gray-500 font-medium">
+                <ul className="mt-2 text-[#707070] font-medium">
                   {usefulLinks.map((link) => (
                     <li key={link.name}>
                       <i className="fa fa-chevron-right text-blue-600"></i>{" "}
@@ -73,10 +73,10 @@ function Footer1() {
               </div>
 
               <div className="leading-9 md:w-3/4">
-                <h1 className="bg-gradient-to-r from-pink-500 via-red-500 to-orange-500 bg-clip-text text-transparent text-xl font-medium">
+                <h1 className="text-[#d0d0d0] text-transparent text-xl font-medium">
                   Servicii
                 </h1>
-                <ul className="mt-2 text-gray-500 font-medium">
+                <ul className="mt-2 text-[#707070] font-medium">
                   {servicesLinks.map((service) => (
                     <li key={service.name}>
                       <i className="fa fa-chevron-right text-blue-600"></i>{" "}

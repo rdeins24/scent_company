@@ -14,17 +14,19 @@ import Link from "next/link";
 import applications from "../data/applicationsData";
 // import services from "../data/servicesData";
 import Works from "../components/works";
-import InfoBlock from '../components/InfoBlock'
-import AnimatedComponent from '../components/AnimatedComponent'
+import InfoBlock from "../components/InfoBlock";
+import AnimatedComponent from "../components/AnimatedComponent";
 import Services from "../components/services";
+import Discover from "../components/Templates/Discover";
+import SensoryArchitecture from "../components/SensoryArchitecture";
 
 const Home = () => {
   return (
     <div className="">
       <Head>
         <title>
-          Scentio Milano | Soluții Marketing Olfactiv | Aroma Marketing Parfumuri Ambientale
-          Personalizate
+          Scentio Milano | Soluții Marketing Olfactiv | Aroma Marketing
+          Parfumuri Ambientale Personalizate
         </title>
         <meta
           name="description"
@@ -43,19 +45,28 @@ const Home = () => {
           })}
         </script>
       </Head>
-
-      <Hero2 />
-      <Services/>
+      <Hero2 />{" "}
+      <Discover
+        title="Creăm experiențe senzoriale unice"
+        description="Suntem lideri în aromatizarea spațiilor. Ne remarcăm prin calitatea superioară a gamei noastre de arome și prin angajamentul nostru față de inovație și tehnologie. Dezvoltăm și patentăm propriile echipamente pentru a oferi experiențe senzoriale inedite și memorabile."
+        buttonText="Descoperă"
+        onButtonClick={() => alert("Button clicked!")}
+      />
+      <InfoBlock />
+      <SensoryArchitecture />
+      {/* <Discover
+       title="Creăm experiențe senzoriale unice"
+       description="Suntem lideri în aromatizarea spațiilor. Ne remarcăm prin calitatea superioară a gamei noastre de arome și prin angajamentul nostru față de inovație și tehnologie. Dezvoltăm și patentăm propriile echipamente pentru a oferi experiențe senzoriale inedite și memorabile."
+       buttonText="Descoperă"
+       onButtonClick={() => alert('Button clicked!')}
+      /> */}
+      <Services />
       {/* <AnimatedComponent/> */}
       {/* <ThreeColumn /> */}
-      <div className="container">
-
-      </div>
+      <div className="container"></div>
       <Gallery />
-    
-      <InfoBlock  bgColor="bg-white"/>
+      {/* <InfoBlock  bgColor="bg-white"/> */}
       <InfoSection />
-
       {/* <div className="container mx-auto py-12 px-4 space-y-12">
         {services.map((service) => (
           <Link key={service.id} href={`/services/${service.id}`} legacyBehavior>
@@ -66,7 +77,6 @@ const Home = () => {
           </Link>
         ))}
       </div> */}
-
       {/* <div className="container mx-auto py-12 px-4 space-y-12">
         {applications.map((application) => (
           <Link key={application.id} href={`/applications/${application.id}`} legacyBehavior>
@@ -77,20 +87,13 @@ const Home = () => {
           </Link>
         ))}
       </div> */}
-
-      <div className="container">
-   
-        <Skills />
-      </div>
-        {/* <Works/> */}
-      <div className="bg-gray-50">
-      <InfoBlock  />
-      </div>
-    
-
-
+      <div className="container"></div>
+      <Skills />
+      {/* <Works/> */}
+      <div className="bg-gray-50"></div>
+      <InfoBlock />
       <Testimonials />
-        <Info />
+      <Info />
       <Blog />
     </div>
   );

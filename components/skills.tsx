@@ -29,8 +29,8 @@ const Skills: React.FC = () => {
   }
 
   return (
-    <div ref={refContainer} className="bg-[white]">
-      <div className=" min-h-screen max-w-5xl mx-auto px-10 lg:px-20 py-24 md:py-28 lg:py-36 flex flex-col justify-center items-center text-4xl md:text-6xl lg:text-6xl tracking-tight font-semibold text-black">
+    <div ref={refContainer} className="bg-black">
+      <div className=" min-h-screen max-w-5xl mx-auto px-10 lg:px-20 py-24 md:py-28 lg:py-36 flex flex-col justify-center items-center text-4xl md:text-6xl lg:text-6xl tracking-tight font-semibold text-white">
         <div className="leading-[1.25]">
           <div
             className={s.skillText}
@@ -40,14 +40,14 @@ const Skills: React.FC = () => {
           >
 Construim conexiuni, creăm branduri, inspirăm succes.          </div>
           <span
-            className={`${s.skillText} inline-block after:content-['_'] text-black`}
+            className={`${s.skillText} inline-block after:content-['_'] text-white`}
             style={{
               opacity: opacityForBlock(progress, 1),
             }}
           >
 Creăm povestea ta de succes prin arome.          </span>
           <span
-            className={`${s.skillText} inline-block text-black`}
+            className={`${s.skillText} inline-block text-white`}
             style={{
               opacity: opacityForBlock(progress, 2),
             }}

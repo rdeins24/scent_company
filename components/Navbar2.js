@@ -49,11 +49,11 @@ const Navbar = () => {
             Despre 
           </Link>
           <Link
-            href="/services"
+            href="/servicii"
             onClick={closeMenu}
             className="hover:underline"
           >
-            Services
+            Servicii
           </Link>
           <Link href="/Contact" onClick={closeMenu} className="hover:underline">
             Contact
