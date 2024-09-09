@@ -63,7 +63,7 @@ const Skills: React.FC = () => {
                 opacity: opacityForBlock(progress, 0),
               }}
             >
-              Hotels
+              Hotele
             </div>
           </Link>
 
@@ -93,7 +93,7 @@ const Skills: React.FC = () => {
             </div>
           </Link>
 
-          <Link href="/showroom">
+          {/* <Link href="/showroom">
             <div
               className={`${s.skillText} cursor-pointer my-10 transition-all duration-300 ${
                 activeService === 3 ? "font-bold " : ""
@@ -104,7 +104,7 @@ const Skills: React.FC = () => {
             >
               Showroom
             </div>
-          </Link>
+          </Link> */}
 
           <Link href="/retail">
             <div

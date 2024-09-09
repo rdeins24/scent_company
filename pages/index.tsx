@@ -2,6 +2,7 @@ import Head from "next/head";
 import Skills from "../components/skills";
 import Blog from "../components/Blog";
 import Hero2 from "../components/Hero2";
+import Hero from "../components/Main/Hero";
 import ThreeColumn from "../components/ThreeColumn";
 import Testimonials from "../components/testimonials";
 import FeatureSection from "../components/Main/FeatureSection";
@@ -45,7 +46,7 @@ const Home = () => {
           })}
         </script>
       </Head>
-      <Hero2 />{" "}
+      <Hero />{" "}
       <Discover
         title="Creăm experiențe senzoriale unice"
         description="Suntem lideri în aromatizarea spațiilor. Ne remarcăm prin calitatea superioară a gamei noastre de arome și prin angajamentul nostru față de inovație și tehnologie. Dezvoltăm și patentăm propriile echipamente pentru a oferi experiențe senzoriale inedite și memorabile."
@@ -68,8 +69,8 @@ const Home = () => {
       <Skills />
       {/* <Works/> */}
       <div className="bg-gray-50"></div>
-      <InfoBlock />
-      <Testimonials />
+      {/* <InfoBlock /> */}
+      {/* <Testimonials /> */}
       <Info />
       <Blog />
     </div>

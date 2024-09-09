@@ -6,7 +6,7 @@ const HeroSection = () => {
     return (
         <div className="flex flex-col-reverse md:flex-row h-screen">
           {/* Left Text Block */}
-          <div className="md:w-1/2 bg-yellow-200 flex flex-col justify-center p-10">
+          <div className="md:w-1/2 bg-[#F7DC6F] flex flex-col justify-center p-10">
             <h1 className="text-4xl font-bold mb-4">Aroma Hotel Scent</h1>
             <p className="mb-8">
               Leverage our expertise in Guest Experience applied to olfactory sensory architecture 

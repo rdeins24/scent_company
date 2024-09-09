@@ -1,5 +1,9 @@
 import expert from '../public/expert.jpg'
 import brand from '../public/brand.jpg'
+import img from '../public/assets/img/commercial.jpg'
+import hotelImg from '../public/assets/Hotels/hotel2.jpg'
+import restaurantImg from '../public/assets/restaurante/restaurant2.jpg'
+
 
 const blogs = [
   {
@@ -26,7 +30,7 @@ Marketingul olfactiv este esențial pentru a îmbunătăți experiența clienți
     date: 'Mar 16, 2022',
     author: 'Dorina R',
     category: 'Aroma Marketing',
-    imageUrl: brand
+    imageUrl: img
   },
   {
     id: '2',
@@ -52,7 +56,7 @@ Marketingul olfactiv este o metodă puternică de a îmbunătăți experiența o
     date: 'Apr 26, 2020',
     author: 'Dorina R',
     category: 'Aroma Marketing',
-    imageUrl: expert
+    imageUrl: hotelImg
   },
   {
     id: '3',
@@ -78,7 +82,7 @@ Marketingul olfactiv poate transforma experiența clienților în restaurante, c
     date: 'Oct 16, 2023',
     author: 'Dorina R',
     category: 'Aroma Marketing',
-    imageUrl: expert
+    imageUrl: restaurantImg
   },
   
 ];

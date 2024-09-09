@@ -1,12 +1,14 @@
 import Image from "next/image";
 import brand from "../../public/brand.jpg";
+import img from '../../public/assets/img/interior.jpg'
+import img1 from '../../public/assets/img/interior1.jpg'
 
 export default function ExampleComponent() {
   return (
     <div className="flex flex-col  sm:flex-row items-center justify-center  py-10 px-4 sm:px-8 lg:px-16 gap-4 h-full my-11">
       <div className="w-full sm:w-1/2 lg:w-1/2">
         <Image
-          src={brand}
+          src={img1}
           alt="Sample Image"
           className="w-90 h-90 object-cover rounded-lg"
         />
