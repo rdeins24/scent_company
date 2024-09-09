@@ -1,6 +1,6 @@
 import React from 'react'
 import HeroService from '../components/Templates/HeroService'
-import image from '../public/restaurante/restaurant3.jpg'
+import image from '../public/assets/restaurante/restaurant3.jpg'
 import InfoBlock from '../components/InfoBlock'
 import Gallery from '../components/Main/Gallery'
 
@@ -23,3 +23,4 @@ const restaurante = () => {
 }
 
 export default restaurante
+
