@@ -10,16 +10,16 @@ function Footer1() {
   };
 
   const usefulLinks = [
-    { name: "Home", href: "/" },
-    { name: "Services", href: "/services" },
+    { name: "Acasa", href: "/" },
+    { name: "Servicii", href: "/servicii" },
     { name: "Contact", href: "/Contact" },
   ];
 
   const servicesLinks = [
-    { name: "Instalare", href: "/services" },
-    { name: "Monitorizare", href: "/services" },
-    { name: "Marketing Olfactiv", href: "/services" },
-    { name: "Hotele", href: "/services" },
+    { name: "Instalare", href: "/servicii" },
+    { name: "Monitorizare", href: "/servicii" },
+    { name: "Marketing Olfactiv", href: "/servicii" },
+    { name: "Hotele", href: "/servicii" },
   ];
 
   const socialLinks = [

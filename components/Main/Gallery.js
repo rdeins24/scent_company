@@ -39,7 +39,7 @@ const CustomSlider = () => {
     if (slider) {
       slider.addEventListener("scroll", checkButtons);
     }
-  
+
     return () => {
       if (slider) {
         slider.removeEventListener("scroll", checkButtons);
@@ -51,6 +51,29 @@ const CustomSlider = () => {
     hidden: { opacity: 0, y: 70 },
     visible: { opacity: 1, y: 0 },
   };
+
+  const slides = [
+    {
+      image: img,
+      text: "Transformă fiecare spațiu cu soluțiile de parfumare personalizate de la Scentio Milano – Creează medii memorabile pentru retail, hoteluri și altele.",
+    },
+    {
+      image: img3,
+      text: "Îmbunătățește experiența oaspeților cu aromele unice Scentio Milano – Ideal pentru hoteluri, birouri și spații publice",
+    },
+    {
+      image: img4,
+      text: "Implica-ți clienții prin puterea mirosului – Îmbogățește spațiile comerciale și corporative cu parfumuri personalizate",
+    },
+    {
+      image: img8,
+      text: "Soluții de parfumare pentru fiecare afacere – De la showroom-uri auto până la centre de wellness.",
+    },
+    {
+      image: img9,
+      text: "Parfumuri de lux pentru orice spațiu – Îmbogățește-ți mediul cu branding olfactiv expert de la Scentio Milano",
+    },
+  ];
 
   return (
     <div className="bg-black md:py-40 pb-[90px] relative">
@@ -65,11 +88,15 @@ const CustomSlider = () => {
           viewport={{ once: true }}
           className="w-full md:w-[30%]  bg-black px-10 p-10"
         >
-          <h2 className="text-xl font-bold">Definition of an Odotype</h2>
+          <h2 className="text-xl font-bold">
+            Descoperă Puterea Marketingului Olfactiv
+          </h2>
           <p className="md:mt-4">
-            An odotype is a unique scent that identifies a brand or
-            establishment. We have a unique method to create the perfect
-            odotype...
+            Scentio Milano oferă soluții personalizate de aromatizare pentru
+            diverse industrii, transformând fiecare spațiu într-o experiență
+            senzorială unică. Creează amintiri plăcute și îmbunătățește
+            percepția brandului tău prin puterea parfumurilor italiene de înaltă
+            calitate.
           </p>
         </motion.div>
 
@@ -80,7 +107,7 @@ const CustomSlider = () => {
             className="flex space-x-2 overflow-hidden scroll-smooth touch-pan-x"
             style={{ scrollSnapType: "x mandatory" }}
           >
-            {[img, img3, img4, img8, img9].map((image, index) => (
+            {slides.map((slide, index) => (
               <motion.div
                 key={index}
                 initial="hidden"
@@ -91,15 +118,13 @@ const CustomSlider = () => {
                 className="relative w-full md:w-[30%] shrink-0 md:h-[600px]"
               >
                 <Image
-                  src={image}
+                  src={slide.image}
                   alt={`Slide ${index + 1}`}
                   className="object-cover w-full h-60 md:h-full opacity-70"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <p className="text-white text-sm font-semibold m-10 md:text-left md:bottom-0 md:mb-4">
-                    {index + 1}An odotype is a unique scent that identifies a brand or
-                    establishment. We have a unique method to create the perfect
-                    odotype...
+                    {slide.text}
                   </p>
                 </div>
               </motion.div>
@@ -120,7 +145,9 @@ const CustomSlider = () => {
         >
           <FaArrowLeft
             className={`${
-              disablePrev ? "text-gray-700" : "text-white group-hover:text-black"
+              disablePrev
+                ? "text-gray-700"
+                : "text-white group-hover:text-black"
             }`}
           />
         </button>
@@ -134,7 +161,9 @@ const CustomSlider = () => {
         >
           <FaArrowRight
             className={`${
-              disableNext ? "text-gray-700" : "text-white group-hover:text-black"
+              disableNext
+                ? "text-gray-700"
+                : "text-white group-hover:text-black"
             }`}
           />
         </button>

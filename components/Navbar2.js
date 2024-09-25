@@ -119,7 +119,7 @@ const Navbar = () => {
               Despre 
             </Link>
             <Link
-              href="/services"
+              href="/servicii"
               onClick={closeMenu}
               className="hover:underline"
             >
