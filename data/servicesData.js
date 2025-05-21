@@ -1,7 +1,7 @@
 const services = [
     {
       id: 'service1',
-      name: 'Service 1',
+      name: 'Service 101',
       heroImage: '/assets/img/dif.jpg', // Path to hero image
       sections: [
         {

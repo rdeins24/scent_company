@@ -56,11 +56,11 @@ const Home = () => {
       <InfoBlock />
       <SensoryArchitecture />
 
-      <Services />
+      {/* <Services /> */}
       {/* <AnimatedComponent/> */}
       {/* <ThreeColumn /> */}
       <div className="container"></div>
-      <Gallery />
+      {/* <Gallery /> */}
       <InfoSection />
       {/* <InfoBlock  bgColor="bg-white"/> */}
 

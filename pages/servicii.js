@@ -18,7 +18,7 @@ const servicii = () => {
 </Head>
 
       <SensoryArchitecture/>
-<Services/>
+{/* <Services/> */}
       {/* <Hero /> */}
       {/* <BuildingBlock />
       <HorizontalTimeline />
