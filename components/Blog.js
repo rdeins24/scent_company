@@ -1,42 +1,40 @@
-import Link from 'next/link';
-import blogs from '../data/blogData';
-import Image from 'next/image';
+import Link from "next/link";
+import Image from "next/image";
+import Reveal from "./ui/Reveal";
+import { formatDateRo } from "../lib/format";
 
-export default function Blog() {
+// Lista de articole de pe /blog (pagina are propriul H1, deci titlurile articolelor sunt h2).
+// Cardurile sunt aceleași ca în components/home/BlogPreview.js (DESIGN-SYSTEM.md §12).
+export default function Blog({ posts }) {
   return (
-    <div className="py-24 sm:py-32 ">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Blogul nostru</h2>
-          <p className="mt-2 text-lg leading-8">Descoperă secretele pentru extinderea afacerii tale cu îndrumările specializate ale experților noștri.</p>
-        </div>
-        <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          {blogs.map((post) => (
-            <article key={post.id} className="flex max-w-xl flex-col items-start justify-between">
-              <Link href={`/blog/${post.id}`} passHref>
-                <div className="group relative w-full cursor-pointer">
-                  <div className="flex items-center gap-x-4 text-xs">
-                    <time dateTime={post.date} className="text-gray-500">{post.date}</time>
-                    <span className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-[#707070] hover:bg-gray-100">{post.category}</span>
-                  </div>
-                  <div className="relative mt-4 w-full h-64 bg-gray-200 rounded-lg overflow-hidden">
-                    <Image src={post.imageUrl} alt={post.title} className="absolute inset-0 w-full h-full object-cover" />
-                  </div>
-                  <div className="group relative">
-                    <h3 className="mt-3 text-lg font-semibold leading-6 text-[#d0d0d0] group-hover:text-gray-600">{post.title}</h3>
-                    <p className="mt-5 line-clamp-3 text-sm leading-6 text-[#707070]">{post.description}</p>
-                  </div>
-                  <div className="relative mt-8 flex items-center gap-x-4">
-                    <div className="text-sm leading-6">
-                      <p className="font-semibold text-gray-900">{post.author}</p>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            </article>
-          ))}
-        </div>
+    <section className="bg-cream-alt px-5 py-20 sm:px-8 sm:py-28 lg:px-14">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-14 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10">
+        {posts.map((post) => (
+          <Reveal key={post.slug} as="article">
+            <Link href={`/blog/${post.slug}`} className="group block hover:opacity-100">
+              <div className="relative aspect-video w-full overflow-hidden rounded-sm bg-border">
+                <Image
+                  src={post.image}
+                  alt={post.imageAlt}
+                  fill
+                  sizes="(min-width: 1024px) 30vw, (min-width: 640px) 50vw, 100vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <div className="mt-5 flex items-center gap-3 text-xs uppercase tracking-[0.12em] text-muted">
+                <time dateTime={post.datePublished}>{formatDateRo(post.datePublished)}</time>
+                <span aria-hidden className="h-px w-4 bg-coral" />
+                <span>{post.category}</span>
+              </div>
+              <h2 className="mt-3 font-serif text-xl font-medium leading-snug transition-colors group-hover:text-muted-strong">
+                {post.title}
+              </h2>
+              <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-muted-strong">{post.description}</p>
+              <p className="mt-4 text-xs tracking-[0.04em] text-muted">{post.author}</p>
+            </Link>
+          </Reveal>
+        ))}
       </div>
-    </div>
+    </section>
   );
 }

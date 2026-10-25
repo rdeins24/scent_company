@@ -1,80 +1,50 @@
-import Head from "next/head";
+import type { GetStaticProps } from "next";
+import Seo from "../components/Seo";
 import Skills from "../components/skills";
-import Blog from "../components/Blog";
-import Hero2 from "../components/Hero2";
 import Hero from "../components/Main/Hero";
-import ThreeColumn from "../components/ThreeColumn";
-import Testimonials from "../components/testimonials";
-import FeatureSection from "../components/Main/FeatureSection";
-import MySection from "../components/Main/MySection";
 import InfoSection from "../components/InfoSection";
-import logo from "../public/assets/logo/scentio.png";
 import Info from "../components/Main/Info";
-import Gallery from "../components/Main/Gallery";
-import Link from "next/link";
-import applications from "../data/applicationsData";
-// import services from "../data/servicesData";
-import Works from "../components/works";
-import InfoBlock from "../components/InfoBlock";
-import AnimatedComponent from "../components/AnimatedComponent";
-import Services from "../components/services";
 import Discover from "../components/Templates/Discover";
-import SensoryArchitecture from "../components/SensoryArchitecture";
+import SegmentsMarquee from "../components/home/SegmentsMarquee";
+import DemoBlock from "../components/sections/DemoBlock";
+import Process from "../components/sections/Process";
+import BlogPreview from "../components/home/BlogPreview";
+import { getHome, getPosts, getSegments } from "../lib/content";
+import { site } from "../lib/site";
 
-const Home = () => {
+const Home = ({ posts, segments, home }) => {
   return (
-    <div className="">
-      <Head>
-        <title>
-          Scentio Milano | Soluții Marketing Olfactiv | Aroma Marketing
-          Parfumuri Ambientale Personalizate
-        </title>
-        <meta
-          name="description"
-          content="La Scentio Milano oferim soluții de marketing olfactiv,aroma marketing pentru a îmbunătăți experiența clienților și a crește vizibilitatea brandului tău. Descoperă cum aromele ambientale pot transforma spațiul tău comercial, showroom-urile și hotelurile. Oferim consultanță specializată și servicii de difuzare a parfumurilor personalizate pentru afacerea ta."
-        />
-        <meta
-          name="keywords"
-          content="marketing olfactiv, parfumuri ambientale, aroma marketing Scentio Milano, soluții olfactive, arome personalizate, difuzare parfumuri, îmbunătățirea experienței clienților, creșterea brandului, consultanță olfactivă"
-        />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            url: "https://www.scentiomilano.com",
-            logo: "https://www.scentiomilano.com/assets/logo/scentio.png",
-          })}
-        </script>
-      </Head>
-      <Hero />{" "}
+    <div className="dore bg-cream text-ink">
+      <Seo
+        title="Marketing Olfactiv Chișinău | Scentio Milano"
+        description="Aromatizare profesională pentru spații comerciale în Moldova: difuzoare de parfum, compoziții create în Grasse și întreținere inclusă."
+        path="/"
+        imageAlt={site.defaultOgImageAlt}
+      />
+      <Hero />
+      <SegmentsMarquee segments={segments} />
       <Discover
         title="Creăm experiențe senzoriale unice"
-        description="Suntem lideri în aromatizarea spațiilor. Ne remarcăm prin calitatea superioară a gamei noastre de arome și prin angajamentul nostru față de inovație și tehnologie. Dezvoltăm și patentăm propriile echipamente pentru a oferi experiențe senzoriale inedite și memorabile."
-        buttonText="Descoperă"
-        onButtonClick={() => alert("Button clicked!")}
+        description="Ca distribuitor oficial Scent Company Milano, aducem în Moldova compoziții create în laboratorul din Grasse și echipamente profesionale de difuzare. Le alegem, le instalăm și le întreținem pentru tine, ca fiecare spațiu să aibă o semnătură olfactivă inconfundabilă."
+        buttonText="Consultație gratuită"
+        highlights={home.highlights}
       />
-      <InfoBlock />
-      <SensoryArchitecture />
-
-      {/* <Services /> */}
-      {/* <AnimatedComponent/> */}
-      {/* <ThreeColumn /> */}
-      <div className="container"></div>
-      {/* <Gallery /> */}
+      <DemoBlock />
+      <Process />
       <InfoSection />
-      {/* <InfoBlock  bgColor="bg-white"/> */}
-
-   
-      <div className="container"></div>
       <Skills />
-      {/* <Works/> */}
-      <div className="bg-gray-50"></div>
-      {/* <InfoBlock /> */}
-      {/* <Testimonials /> */}
       <Info />
-      <Blog />
+      <BlogPreview posts={posts} />
     </div>
   );
 };
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => ({
+  props: {
+    posts: getPosts(locale),
+    segments: getSegments(locale).map(({ slug, navLabel }) => ({ slug, navLabel })),
+    home: getHome(locale),
+  },
+});
 
 export default Home;

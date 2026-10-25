@@ -33,3 +33,14 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# catalogul PDF sursă (doar local; versiunea publică e în public/)
+/catalog/
+
+# scripturile de catalog: mediu Python și fișiere intermediare
+/scripts/catalog/.venv/
+/scripts/catalog/.work/
+__pycache__/
+
+# referință de design (clonă read-only a altui site) — nu se comite niciodată
+/design-reference/

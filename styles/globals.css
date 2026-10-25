@@ -4,36 +4,81 @@
 
 
 body, html {
-  background-color: black;
+  background-color: #f4eee6;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   width: 100%;
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
-h2 {
-  color: rgb(208, 208, 208);
-}
-h3{
-  color: rgb(208, 208, 208);
-}
-p{
-  color: rgb(112, 112, 112);
+
+/* ---------- Sistemul de design (Doré) ---------- */
+a {
+  text-decoration: none;
 }
 
-.container {
-  max-width: 1480px;
-  margin: 0 auto;
-  padding: 0 1rem;
+a:hover {
+  opacity: 0.72;
 }
-.container_grey {
- 
-  max-width: 1480px;
-  margin: 0 auto;
-  padding: 0 1rem;
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+  border-radius: 1px;
 }
-@media (max-width: 768px) {
-  .container {
-    padding: 0 0.5rem;
+
+.dore ::selection {
+  background: #211d18;
+  color: #f4eee6;
+}
+
+/* Link text cu subliniere; la hover sublinierea devine coral (accentul Scentio). */
+.link-arrow {
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: border-color 0.2s;
+}
+.link-arrow:hover {
+  opacity: 1;
+  border-bottom-color: #f97e76;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation-name: marquee;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.marquee-track:hover,
+.marquee-track:focus-within {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation-play-state: paused;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

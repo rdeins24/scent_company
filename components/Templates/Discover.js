@@ -1,26 +1,27 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
+import Reveal from "../ui/Reveal";
+import Highlights from "../ui/Highlights";
 
-const DiscoverSection = ({ title, description, buttonText, onButtonClick }) => {
+const DiscoverSection = ({ title, description, buttonText, highlights }) => {
   return (
-    <div className="bg-[#0d0e11] text-white p-8 md:p-16">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between">
-        <div className="md:w-3/4 mb-6 md:mb-0">
-          <h2 className="text-2xl md:text-4xl font-semibold">{title}</h2>
-          <p className="mt-4 text-md md:text-lg">{description}</p>
-        </div>
-        <div className="md:w-1/4 flex justify-center md:justify-end">
-        <Link href={"Contact"}>
-          <button
-         
-            className="px-6 py-2 border border-white text-white hover:bg-white hover:text-black transition-all"
-            >
+    <section className="bg-cream px-5 py-20 text-ink sm:px-8 sm:py-32 lg:px-14">
+      <div className="mx-auto max-w-6xl">
+        <Reveal className="mb-16 grid gap-10 sm:mb-24 lg:grid-cols-[1fr_auto] lg:items-end lg:gap-16">
+          <div>
+            <h2 className="max-w-2xl font-serif text-4xl font-medium leading-[1.1] sm:text-5xl">{title}</h2>
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-strong">{description}</p>
+          </div>
+          <Link
+            href="/contact"
+            className="self-start rounded-sm bg-ink px-6 py-[14px] text-sm font-medium tracking-[0.03em] text-cream lg:self-end"
+          >
             {buttonText}
-          </button>
-            </Link>
-        </div>
+          </Link>
+        </Reveal>
+        {highlights?.length > 0 && <Highlights items={highlights} />}
       </div>
-    </div>
+    </section>
   );
 };
 
